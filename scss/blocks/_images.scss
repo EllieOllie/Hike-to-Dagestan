@@ -1,0 +1,41 @@
+@use "../global/variables";
+@use "../global/mixins" as *;
+
+.images {
+  &__content {
+    position: relative;
+  }
+
+  &__item {
+    transition: transform 0.3s ease;
+
+    &:hover,
+    &:focus-visible {
+      transform: scale(1.05);
+    }
+  }
+
+  &__btn {
+    padding: 10px;
+    position: absolute;
+    height: 100%;
+
+    svg {
+      color: variables.$color-white;
+      transition: color 0.3s ease;
+    }
+
+    &--left {
+      right: 0;
+    }
+
+    &--right {
+      left: 0;
+    }
+
+    &:hover svg,
+    &:focus-visible svg {
+      color: variables.$color-peach;
+    }
+  }
+}

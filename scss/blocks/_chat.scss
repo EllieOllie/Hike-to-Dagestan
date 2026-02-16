@@ -1,0 +1,76 @@
+@use "../global/variables";
+@use "../global/mixins" as *;
+
+.chat {
+  background-image: url(../../images/chat-bg.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  // background-color: variables.$color-transparent-bg;
+
+  // filter: brightness(0.5);
+  @include vp-1023 {
+    background-position: 70% bottom;
+  }
+
+  &__content {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    @include vp-1023 {
+      padding: 10px;
+    }
+
+    svg {
+      width: 80px;
+      height: 80px;
+      fill: variables.$color-peach;
+      transition: fill 0.3s ease;
+
+      @include vp-1023 {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    &:hover svg,
+    &:focus-visible svg {
+      fill: variables.$color-white;
+    }
+
+    &:hover .chat__link-text,
+    &:focus-visible .chat__link-text {
+      color: variables.$color-peach;
+    }
+  }
+
+  &__link-text {
+    width: 450px;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 1.5px;
+    color: variables.$color-white;
+    transition: color 0.3s ease;
+
+    @include vp-1023 {
+      font-size: 36px;
+    }
+
+    @include vp-767 {
+      width: 250px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}

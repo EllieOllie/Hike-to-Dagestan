@@ -1,0 +1,8 @@
+@use "../global/variables";
+@use "../global/mixins" as *;
+
+.about {
+  &__content {
+    flex-direction: row-reverse;
+  }
+}

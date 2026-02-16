@@ -1,0 +1,31 @@
+/* Vendor */
+/* ------------------------------------ */
+// @use "vendor/swiper.scss";
+
+/* Global */
+/* ------------------------------------ */
+@use "../scss/global/normalize";
+@use "../scss/global/variables";
+@use "../scss/global/mixins";
+@use "../scss/global/fonts";
+@use "../scss/global/reboot";
+@use "../scss/global/container";
+@use "../scss/global/visually-hidden";
+
+
+/* Blocks */
+/* ------------------------------------ */
+@use "blocks/_btn";
+@use "../scss/blocks/header";
+@use "../scss/blocks/nav";
+@use "../scss/blocks/main";
+@use "../scss/blocks/hero";
+@use "blocks/_trip";
+@use "blocks/_about";
+@use "blocks/_images";
+@use "blocks/_image";
+@use "blocks/_route";
+@use "blocks/_staff";
+@use "blocks/_training";
+@use "blocks/_chat";
+@use "blocks/_footer";

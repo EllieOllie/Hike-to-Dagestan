@@ -1,0 +1,47 @@
+@use "../global/variables";
+@use "../global/mixins" as *;
+
+.training {
+  padding: 60px 0 80px;
+  background-color: variables.$color-transparent-bg;
+
+
+  &__title {
+    color: variables.$color-white;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__text-title {
+    color: variables.$color-white;
+  }
+
+  &__text {
+    color: variables.$color-white;
+  }
+
+  &__list {
+    position: relative;
+    margin: 0;
+    padding-left: 60px;
+    color: variables.$color-white;
+    list-style-image: url('../images/gym.png');
+  }
+
+  &__list-item {
+    padding-left: 20px;
+
+    &::marker {
+      padding: 10px;
+    }
+  }
+
+  &__link {
+    color: variables.$color-white;
+  }
+}

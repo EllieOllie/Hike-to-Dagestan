@@ -1,0 +1,45 @@
+@use "../global/variables";
+@use "../global/mixins" as *;
+
+.btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+
+  &:focus,
+  &:focus-visible {
+    border: 0;
+    outline: 0;
+  }
+
+  &--filled {
+    width: 240px;
+    min-height: 80px;
+    padding: 10px;
+    font-size: 22px;
+    line-height: 24px;
+    color: variables.$color-white;
+    background-color: variables.$color-peach;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+    @include vp-767 {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    &:hover,
+    &:focus-visible {
+      color: variables.$color-peach;
+      background-color: variables.$color-black;
+    }
+  }
+
+  // &--icon {
+  //   gap: 16px;
+  // }
+
+  // &:disabled {
+  //   opacity: 0.6;
+  // }
+}
