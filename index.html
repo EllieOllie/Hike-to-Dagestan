@@ -17,34 +17,41 @@
             <img src="images/header__logo.png" alt="лого девушки-походницы" width="107" height="85">
           </a>
 
-          <nav class="header__nav nav">
-            <ul class="nav__list">
-              <li class="nav__list-item">
-                <a class="nav__list-link" href="#trip">О&nbsp;приключении</a>
-              </li>
-              <li class="nav__list-item">
-                <a class="nav__list-link" href="#about">О&nbsp;нас</a>
-              </li>
-              <li class="nav__list-item">
-                <a class="nav__list-link" href="#images">Галерея</a>
-              </li>
-              <li class="nav__list-item">
-                <a class="nav__list-link" href="#route">Маршрут</a>
-              </li>
-              <li class="nav__list-item">
-                <a class="nav__list-link" href="#staff">Снаряжение</a>
-              </li>
-              <li class="nav__list-item">
-                <a class="nav__list-link" href="#training">Подготовка</a>
-              </li>
-            </ul>
-          </nav>
+          <div class="burger-menu">
+            <nav class="burger-menu__nav header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__list-item">
+                  <a class="nav__list-link" href="#trip">О&nbsp;приключении</a>
+                </li>
+                <li class="nav__list-item">
+                  <a class="nav__list-link" href="#about">О&nbsp;нас</a>
+                </li>
+                <li class="nav__list-item">
+                  <a class="nav__list-link" href="#images">Галерея</a>
+                </li>
+                <li class="nav__list-item">
+                  <a class="nav__list-link" href="#route">Маршрут</a>
+                </li>
+                <li class="nav__list-item">
+                  <a class="nav__list-link" href="#staff">Снаряжение</a>
+                </li>
+                <li class="nav__list-item">
+                  <a class="nav__list-link" href="#training">Подготовка</a>
+                </li>
+              </ul>
+              <a class="header__link link" href="#" aria-label="телеграм-чат приключения">
+                <span class="header__link-text">Телеграм-чат приключения</span>
+                <svg width="60" height="60" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </nav>
 
-          <a class="header__link telegram-link link" href="#" aria-label="телеграм-чат приключения">
-            <svg width="50" height="50" aria-hidden="true">
-              <use xlink:href="images/sprite.svg#telegram"></use>
-            </svg>
-          </a>
+            <button class="burger-menu__btn btn" type="button">
+              <span class="burger-menu__lines"></span>
+            </button>
+          </div>
+
         </div>
     </header>
 
@@ -55,7 +62,8 @@
             <h1 class="hero__title main__title hero__title--filled">Идем в&nbsp;поход по&nbsp;<span
                 class="hero__title--big">Дагестану</span></h1>
             <span class="hero__date">май, 2026</span>
-            <p class="hero__description">Дербент, Кубачи&nbsp;&mdash; Кумух, Гамсутль-Чох-Салта-Гуниб-Карадах</p>
+            <p class="hero__description">Дербент,&nbsp;Кубачи&nbsp;-&nbsp;Кумух,
+              Гамсутль&nbsp;-&nbsp;Чох&nbsp;-&nbsp;Салта&nbsp;-&nbsp;Гуниб&nbsp;-&nbsp;Карадах</p>
           </div>
         </div>
       </section>
@@ -67,7 +75,7 @@
               alt="заброшенное село Гамсутль">
             <div class="trip__description main__section-description">
               <p class="trip__text main__section-text">Наша группа пройдёт два участка маршрута Кавказской тропы
-                по&nbsp;весеннему и&nbsp;цветущему Дагестану.
+                по&nbsp;весеннему&nbsp;цветущему Дагестану.
               </p>
               <p class="trip__text main__section-text">Это настоящий горный поход, где мы&nbsp;будем идти
                 с&nbsp;рюкзаками,
@@ -320,7 +328,7 @@
       <section class="chat main__section" id="chat">
         <div class="container">
           <div class="chat__content">
-            <a class="chat__link telegram-link link" href="#" aria-label="телеграм-чат приключения">
+            <a class="chat__link link" href="#" aria-label="телеграм-чат приключения">
               <svg width="50" height="50" aria-hidden="true">
                 <use xlink:href="images/sprite.svg#telegram"></use>
               </svg>

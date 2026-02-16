@@ -2,6 +2,7 @@
 @use "../global/mixins" as *;
 
 .main {
+  scroll-behavior: smooth;
   flex: 1;
 
   &__section {
@@ -54,7 +55,6 @@
     @include vp-767 {
       height: 335px;
     }
-
   }
 
   &__section-description {
