@@ -10,7 +10,6 @@
     text-align: center;
   }
 
-
   &__title {
     margin: 0 0 50px;
     font-family: variables.$ff-intro;
@@ -25,20 +24,21 @@
     }
 
     @include vp-767 {
-      font-size: 50px;
+      margin: 0 0 30px;
+      font-size: 48px;
       line-height: 56px;
+      letter-spacing: -1px;
     }
   }
 
   &__title--filled {
-    // background-image: url('../images/hero-text-bg.avif');
-    background-image: url('../images/hero-text-bg-2.avif');
-    // background-position: 50% 130%;
-    background-position: 10% 50%;
+    background-image: url('../images/hero-text-bg.avif');
+    background-position: 75% 10%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     -webkit-text-fill-color: transparent;
+    background-size: 50%;
   }
 
   &__title--big {
@@ -56,6 +56,11 @@
       font-size: 22px;
       line-height: 24px;
     }
+
+    @include vp-767 {
+      font-size: 18px;
+      line-height: 20px;
+    }
   }
 
   &__description {
@@ -68,6 +73,11 @@
     @include vp-1023 {
       font-size: 20px;
       line-height: 28px;
+    }
+
+    @include vp-767 {
+      font-size: 18px;
+      line-height: 26px;
     }
   }
 }

@@ -26,18 +26,49 @@
   }
 
   &__list {
-    position: relative;
     margin: 0;
-    padding-left: 60px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     color: variables.$color-white;
+    list-style: none;
     list-style-image: url('../images/gym.png');
+
+    @include vp-767 {
+      gap: 10px;
+    }
   }
 
   &__list-item {
-    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 
-    &::marker {
-      padding: 10px;
+    &::before {
+      content: '';
+      width: 100px;
+      height: 100px;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @include vp-1023 {
+        width: 60px;
+        height: 50px;
+      }
+
+      @include vp-767 {
+        width: 100px;
+        height: 35px;
+      }
+    }
+
+    &:first-child::before {
+      background-image: url('../images/gym.png');
+    }
+
+    &:last-child::before {
+      background-image: url('../images/running.png');
     }
   }
 

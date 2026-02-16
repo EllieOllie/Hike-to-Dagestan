@@ -446,7 +446,7 @@ button {
 }
 @media (max-width: 767px) {
   .header {
-    padding: 30px 0;
+    padding: 20px 0;
   }
 }
 @media (max-width: 1023px) {
@@ -547,10 +547,17 @@ button {
   text-align: center;
   margin: 0 0 40px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .main__section-title {
     font-size: 28px;
     line-height: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .main__section-title {
+    margin: 0 0 30px;
+    font-size: 24px;
+    line-height: 24px;
   }
 }
 .main__section-content {
@@ -571,6 +578,11 @@ button {
   .main__section-img {
     flex-basis: 100%;
     object-position: top;
+  }
+}
+@media (max-width: 767px) {
+  .main__section-img {
+    height: 335px;
   }
 }
 .main__section-description {
@@ -636,17 +648,20 @@ button {
 }
 @media (max-width: 767px) {
   .hero__title {
-    font-size: 50px;
+    margin: 0 0 30px;
+    font-size: 48px;
     line-height: 56px;
+    letter-spacing: -1px;
   }
 }
 .hero__title--filled {
-  background-image: url("../images/hero-text-bg-2.avif");
-  background-position: 10% 50%;
+  background-image: url("../images/hero-text-bg.avif");
+  background-position: 75% 10%;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
+  background-size: 50%;
 }
 .hero__title--big {
   text-transform: uppercase;
@@ -664,6 +679,12 @@ button {
     line-height: 24px;
   }
 }
+@media (max-width: 767px) {
+  .hero__date {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
 .hero__description {
   max-width: 550px;
   margin: 0;
@@ -675,6 +696,12 @@ button {
   .hero__description {
     font-size: 20px;
     line-height: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .hero__description {
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 
@@ -690,6 +717,11 @@ button {
 }
 .images__item:hover, .images__item:focus-visible {
   transform: scale(1.05);
+}
+@media (max-width: 1023px) {
+  .images__item:first-child {
+    display: none;
+  }
 }
 .images__btn {
   padding: 10px;
@@ -719,12 +751,18 @@ button {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 767px) {
+  .image__item {
+    height: 335px;
+  }
+}
 @media (max-width: 1023px) {
   .image {
     flex-basis: 100%;
   }
 }
 .image__description {
+  padding: 3px;
   position: absolute;
   content: "";
   width: 100%;
@@ -734,6 +772,7 @@ button {
   font-weight: 500;
   line-height: 24px;
   color: #ffffff;
+  background-color: rgba(13, 13, 13, 0.55);
 }
 @media (max-width: 767px) {
   .image__description {
@@ -756,8 +795,9 @@ button {
   position: relative;
 }
 .route__caption {
-  max-width: 60%;
+  width: 80%;
   margin: 0;
+  padding: 10px;
   position: absolute;
   content: "";
   bottom: 40px;
@@ -765,9 +805,11 @@ button {
   font-weight: 400;
   line-height: 20px;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.7254901961);
 }
 @media (max-width: 767px) {
   .route__caption {
+    width: 100%;
     font-size: 14px;
     line-height: 18px;
   }
@@ -789,6 +831,10 @@ button {
     padding: 30px 0 60px;
   }
 }
+.staff__title {
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #3B3A48;
+}
 .staff__content {
   display: flex;
   flex-direction: column;
@@ -797,6 +843,14 @@ button {
 }
 .staff__text-title {
   text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #3B3A48;
+}
+@media (max-width: 767px) {
+  .staff__text-title {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 .staff__lists {
   display: flex;
@@ -853,17 +907,49 @@ button {
   color: #ffffff;
 }
 .training__list {
-  position: relative;
   margin: 0;
-  padding-left: 60px;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   color: #ffffff;
+  list-style: none;
   list-style-image: url("../images/gym.png");
 }
-.training__list-item {
-  padding-left: 20px;
+@media (max-width: 767px) {
+  .training__list {
+    gap: 10px;
+  }
 }
-.training__list-item::marker {
-  padding: 10px;
+.training__list-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.training__list-item::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1023px) {
+  .training__list-item::before {
+    width: 60px;
+    height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .training__list-item::before {
+    width: 100px;
+    height: 35px;
+  }
+}
+.training__list-item:first-child::before {
+  background-image: url("../images/gym.png");
+}
+.training__list-item:last-child::before {
+  background-image: url("../images/running.png");
 }
 .training__link {
   color: #ffffff;
@@ -877,7 +963,7 @@ button {
 }
 @media (max-width: 1023px) {
   .chat {
-    background-position: 70% bottom;
+    background-position: 55% bottom;
   }
 }
 .chat__content {
@@ -885,6 +971,11 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 767px) {
+  .chat__content {
+    min-height: 335px;
+  }
 }
 .chat__link {
   padding: 20px;
@@ -923,6 +1014,7 @@ button {
   line-height: 42px;
   letter-spacing: 1.5px;
   color: #ffffff;
+  text-shadow: 4px 4px 7px #111717;
   transition: color 0.3s ease;
 }
 @media (max-width: 1023px) {
