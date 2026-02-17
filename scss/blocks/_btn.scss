@@ -21,9 +21,13 @@
     line-height: 24px;
     color: variables.$color-white;
     background-color: variables.$color-peach;
+    box-shadow: 1px 1px 5px variables.$color-black;
+    border-radius: 2px;
     transition: color 0.3s ease, background-color 0.3s ease;
 
     @include vp-767 {
+      width: 200px;
+      min-height: 60px;
       font-size: 18px;
       line-height: 20px;
     }

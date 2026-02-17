@@ -47,6 +47,7 @@
     flex-basis: 50%;
     gap: 20px;
     padding: 10px;
+    border-radius: 2px;
     background-color: variables.$color-lightbeige;
 
     @include vp-1023 {

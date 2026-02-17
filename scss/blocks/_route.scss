@@ -21,6 +21,10 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+
+    & iframe {
+      border-radius: 2px;
+    }
   }
 
   &__caption {
@@ -49,6 +53,7 @@
     align-items: center;
     gap: 20px;
     padding: 10px;
+    border-radius: 2px;
     background-color: variables.$color-lightbeige;
   }
 
