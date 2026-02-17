@@ -2,6 +2,14 @@
 @use "../global/mixins" as *;
 
 .images {
+
+  &__title {
+    @include vp-1023 {
+      color: variables.$color-white;
+      text-shadow: 2px 2px 5px variables.$color-black;
+    }
+  }
+
   &__content {
     position: relative;
   }
@@ -15,6 +23,8 @@
     }
 
     @include vp-1023 {
+      flex-basis: 100%;
+
       &:first-child {
         display: none;
       }

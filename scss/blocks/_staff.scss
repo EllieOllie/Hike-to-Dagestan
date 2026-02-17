@@ -37,6 +37,7 @@
 
     @include vp-1023 {
       flex-wrap: wrap;
+      width: 100%;
     }
   }
 
@@ -51,11 +52,22 @@
     @include vp-1023 {
       flex-basis: 100%;
     }
+
+    @include vp-1023 {
+      &:last-child {
+        display: none;
+      }
+    }
   }
 
   &__name {
     font-size: 20px;
     line-height: 28px;
+
+    @include vp-767 {
+      font-size: 18px;
+      line-height: 20px;
+    }
   }
 
   &__list {
@@ -66,5 +78,10 @@
   &__list-item {
     font-size: 18px;
     line-height: 24px;
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }

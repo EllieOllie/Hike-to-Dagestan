@@ -2,8 +2,12 @@
 @use "../global/mixins" as *;
 
 .footer {
-  background-color: variables.$color-black-bg;
+  background-color: variables.$color-blackblack;
   padding: 60px 0;
+
+  @include vp-1023 {
+    padding: 20px 0;
+  }
 
   &__content {
     display: flex;
