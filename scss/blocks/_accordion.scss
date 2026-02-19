@@ -1,97 +1,95 @@
-// .accordion {
-//   display: flex;
-//   flex-direction: column;
-//   gap: 24px;
-//   $root: &;
+@use "../global/variables";
+@use "../global/mixins" as *;
 
-//   &__element {
-//     border-bottom: 1px solid rgba($color-black, 0.1);
-//     padding: 0 0 24px;
-//   }
+.accordion {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  gap: 20px;
+  border-radius: 2px;
+  $root: &;
 
-//   &__btn {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     gap: 50px;
-//     width: 100%;
-//     background-color: transparent;
-//     border: none;
-//     text-align: left;
-//     padding: 0 72px 0 0;
-//     position: relative;
-//     cursor: pointer;
+  &__element {
+    border-bottom: 1px solid variables.$color-transparent-bg;
+    padding: 0 0 24px;
+  }
 
-//     &::before {
-//       content: "";
-//       position: absolute;
-//       width: 100%;
-//       height: 100%;
-//       top: 0;
-//       left: 0;
-//       z-index: 1;
-//     }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    text-align: left;
+    padding: 0 72px 0 0;
+    position: relative;
+    cursor: pointer;
 
-//     &--active {
-//       #{$root}__btn-icon::after {
-//         opacity: 0;
-//       }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
 
-//       + #{$root}__content {
-//         display: flex;
-//       }
-//     }
-//   }
+    &--active {
+      #{$root}__btn-icon::after {
+        opacity: 0;
+      }
 
-//   &__btn-text {
-//     font-size: 24px;
-//     font-weight: 500;
-//     line-height: 36px;
-//   }
+      +#{$root}__content {
+        display: flex;
+      }
+    }
+  }
 
-//   &__btn-icon {
-//     position: absolute;
-//     height: 32px;
-//     width: 32px;
-//     top: 0;
-//     right: 0;
+  &__btn-text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
 
-//     &::before,
-//     &::after {
-//       content: "";
-//       height: 2px;
-//       width: 19px;
-//       background-color: $color-black;
-//       border-radius: 10px;
-//       position: absolute;
-//       top: 50%;
-//       left: 50%;
-//       transform: translate(-50%, -50%);
-//     }
+    @include vp-767 {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
 
-//     &::after {
-//       height: 19px;
-//       width: 2px;
-//       transition: opacity $transition;
-//     }
-//   }
+  &__btn-icon {
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    top: 0;
+    right: 0;
 
-//   &__content {
-//     display: none;
-//   }
+    &::before,
+    &::after {
+      content: "";
+      height: 2px;
+      width: 19px;
+      background-color: variables.$color-transparent-bg;
+      border-radius: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
 
-//   &__inner {
-//     padding: 12px 0 0;
-//   }
+    &::after {
+      height: 19px;
+      width: 2px;
+      transition: opacity 0.3s ease;
+    }
+  }
 
-//   &__text {
-//     font-size: 18px;
-//     font-weight: 400;
-//     line-height: 28px;
-//     color: rgba($color-black, 0.8);
+  &__content {
+    display: none;
+  }
 
-//     p {
-//       margin: 0;
-//     }
-//   }
-// }
+  &__inner {
+    padding: 12px 0 0;
+  }
+
+}

@@ -14,9 +14,13 @@
   }
 
   &--filled {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 240px;
     min-height: 80px;
     padding: 10px;
+    text-align: center;
     font-size: 22px;
     line-height: 24px;
     color: variables.$color-white;

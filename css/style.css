@@ -412,9 +412,13 @@ button {
   outline: 0;
 }
 .btn--filled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 240px;
   min-height: 80px;
   padding: 10px;
+  text-align: center;
   font-size: 22px;
   line-height: 24px;
   color: #ffffff;
@@ -886,28 +890,24 @@ button {
   border-radius: 2px;
   background-color: rgba(229, 218, 209, 0.7176470588);
 }
-@media (max-width: 1023px) {
-  .route__text--ellipsis {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-height: 3em;
-  }
-}
 
 .staff {
   padding: 60px 0 80px;
+  background-color: #faf6f5;
+  background-image: url(../../images/staff.webp);
+  background-repeat: no-repeat;
+  background-position: right 0;
+  background-size: 500px;
+}
+@media (max-width: 1023px) {
+  .staff {
+    background-image: none;
+  }
 }
 @media (max-width: 767px) {
   .staff {
-    padding: 30px 0 60px;
+    padding: 60px 0;
   }
-}
-.staff__title {
-  color: #ffffff;
-  text-shadow: 2px 2px 5px #3B3A48;
 }
 .staff__content {
   display: flex;
@@ -917,8 +917,6 @@ button {
 }
 .staff__text-title {
   text-align: center;
-  color: #ffffff;
-  text-shadow: 2px 2px 5px #3B3A48;
 }
 @media (max-width: 767px) {
   .staff__text-title {
@@ -928,41 +926,13 @@ button {
 }
 .staff__lists {
   display: flex;
+  align-self: start;
   gap: 40px;
+  width: 50%;
 }
 @media (max-width: 1023px) {
   .staff__lists {
-    flex-wrap: wrap;
     width: 100%;
-  }
-}
-.staff__box {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 50%;
-  gap: 20px;
-  padding: 10px;
-  border-radius: 2px;
-  background-color: rgba(229, 218, 209, 0.7176470588);
-}
-@media (max-width: 1023px) {
-  .staff__box {
-    flex-basis: 100%;
-  }
-}
-@media (max-width: 1023px) {
-  .staff__box:last-child {
-    display: none;
-  }
-}
-.staff__name {
-  font-size: 20px;
-  line-height: 28px;
-}
-@media (max-width: 767px) {
-  .staff__name {
-    font-size: 18px;
-    line-height: 20px;
   }
 }
 .staff__list {
@@ -978,6 +948,84 @@ button {
     font-size: 16px;
     line-height: 20px;
   }
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  gap: 20px;
+  border-radius: 2px;
+}
+.accordion__element {
+  border-bottom: 1px solid rgba(13, 13, 13, 0.55);
+  padding: 0 0 24px;
+}
+.accordion__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+  text-align: left;
+  padding: 0 72px 0 0;
+  position: relative;
+  cursor: pointer;
+}
+.accordion__btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.accordion__btn--active .accordion__btn-icon::after {
+  opacity: 0;
+}
+.accordion__btn--active + .accordion__content {
+  display: flex;
+}
+.accordion__btn-text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+@media (max-width: 767px) {
+  .accordion__btn-text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+.accordion__btn-icon {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  top: 0;
+  right: 0;
+}
+.accordion__btn-icon::before, .accordion__btn-icon::after {
+  content: "";
+  height: 2px;
+  width: 19px;
+  background-color: rgba(13, 13, 13, 0.55);
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.accordion__btn-icon::after {
+  height: 19px;
+  width: 2px;
+  transition: opacity 0.3s ease;
+}
+.accordion__content {
+  display: none;
+}
+.accordion__inner {
+  padding: 12px 0 0;
 }
 
 .training {
@@ -1066,6 +1114,11 @@ button {
 .tour-info__title {
   color: #ffffff;
 }
+@media (max-width: 767px) {
+  .tour-info__title {
+    margin-bottom: 0;
+  }
+}
 .tour-info__content {
   display: flex;
   flex-direction: column;
@@ -1076,7 +1129,12 @@ button {
   font-size: 42px;
   line-height: 42px;
   text-align: center;
-  color: #ffffff;
+  color: #DB995D;
+}
+@media (max-width: 767px) {
+  .tour-info__text-title {
+    font-size: 28px;
+  }
 }
 .tour-info__text {
   color: #ffffff;
@@ -1087,7 +1145,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: #ffffff;
+  color: #DB995D;
 }
 
 .chat {
