@@ -1,9 +1,9 @@
 import { navigate } from './navigate.js'
-import { getBurger } from './burger.js'
+import { btnUpScroll } from './btn-up.js'
 
+document.addEventListener('DOMContentLoaded', function () {
+  // Запуск приложения
+  navigate('home')
 
-// Запуск приложения
-navigate('home')
-
-// Бургер-меню
-getBurger()
+  btnUpScroll()
+})

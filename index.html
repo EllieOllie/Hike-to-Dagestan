@@ -13,46 +13,39 @@
     <header class="header">
       <div class="container">
         <div class="header__content">
-          <a href="#" class="header__logo-link">
-            <img src="images/header__logo.png" alt="лого девушки-походницы" width="107" height="85">
+
+          <img class="header__logo" src="images/header__logo.png" alt="лого девушки-походницы" width="107" height="85">
+
+          <nav class=" header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#trip">О&nbsp;приключении</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#about">О&nbsp;нас</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#images">Галерея</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#route">Маршрут</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#staff">Снаряжение</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#training">Подготовка</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__link link" href="#" aria-label="телеграм-чат приключения">
+            <svg width="60" height="60" aria-hidden="true">
+              <use xlink:href="images/sprite.svg#telegram"></use>
+            </svg>
           </a>
-
-          <div class="burger-menu">
-            <nav class="burger-menu__nav header__nav nav">
-              <ul class="nav__list">
-                <li class="nav__list-item">
-                  <a class="nav__list-link" href="#trip">О&nbsp;приключении</a>
-                </li>
-                <li class="nav__list-item">
-                  <a class="nav__list-link" href="#about">О&nbsp;нас</a>
-                </li>
-                <li class="nav__list-item">
-                  <a class="nav__list-link" href="#images">Галерея</a>
-                </li>
-                <li class="nav__list-item">
-                  <a class="nav__list-link" href="#route">Маршрут</a>
-                </li>
-                <li class="nav__list-item">
-                  <a class="nav__list-link" href="#staff">Снаряжение</a>
-                </li>
-                <li class="nav__list-item">
-                  <a class="nav__list-link" href="#training">Подготовка</a>
-                </li>
-              </ul>
-              <a class="header__link link" href="#" aria-label="телеграм-чат приключения">
-                <span class="header__link-text">Телеграм-чат приключения</span>
-                <svg width="60" height="60" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#telegram"></use>
-                </svg>
-              </a>
-            </nav>
-
-            <button class="burger-menu__btn btn" type="button">
-              <span class="burger-menu__lines"></span>
-            </button>
-          </div>
-
         </div>
+
+      </div>
     </header>
 
     <main class="main">
@@ -61,7 +54,7 @@
           <div class="container">
             <div class="hero__content">
               <h1 class="hero__title main__title hero__title--filled">Идем в&nbsp;поход по&nbsp;<span
-                  class="hero__title--big">Дагестану</span></h1>
+                  class="hero__title-big">Дагестану</span></h1>
               <span class="hero__date">май, 2026</span>
               <p class="hero__description">Дербент,&nbsp;Кубачи&nbsp;-&nbsp;Кумух,
                 Гамсутль&nbsp;-&nbsp;Чох&nbsp;-&nbsp;Салта&nbsp;-&nbsp;Гуниб&nbsp;-&nbsp;Карадах</p>
@@ -141,23 +134,26 @@
               </div>
 
             </div>
+          </div>
         </section>
         <section class="images main__section" id="images">
           <div class="container">
             <h2 class="images__title main__section-title">Галерея изображений</h2>
             <div class="images__content main__section-content">
-              <button class="images__item btn" type="button">
-                <figure class="image">
-                  <img class="image__item" src="images/gunib.jpg" alt="Вид на гуниб с поляны Айвазовского">
-                  <figcaption class="image__description">Вид на&nbsp;гуниб с&nbsp;поляны Айвазовского</figcaption>
-                </figure>
-              </button>
-              <button class="images__item btn" type="button">
-                <figure class="image">
-                  <img class="image__item" src="images/kubachi.jpg" alt="Кубачи на закате">
-                  <figcaption class="image__description">Кубачи на закате</figcaption>
-                </figure>
-              </button>
+              <ul class="images__list">
+                <li class="images__list-item">
+                  <figure class="image">
+                    <img class="image__item" src="images/gunib.jpg" alt="Вид на гуниб с поляны Айвазовского">
+                    <figcaption class="image__description">Вид на&nbsp;гуниб с&nbsp;поляны Айвазовского</figcaption>
+                  </figure>
+                </li>
+                <li class="images__list-item">
+                  <figure class="image">
+                    <img class="image__item" src="images/kubachi.jpg" alt="Кубачи на закате">
+                    <figcaption class="image__description">Кубачи на закате</figcaption>
+                  </figure>
+                </li>
+              </ul>
               <button class="images__btn images__btn--left btn" type="button" aria-label="влево">
                 <svg width="50" height="50" aria-hidden="true">
                   <use xlink:href="images/sprite.svg#arrow-right"></use>
@@ -222,6 +218,7 @@
               </div>
               <button class="route__btn btn btn--filled" type="button">Подробнее</button>
             </div>
+          </div>
         </section>
         <section class="staff main__section" id="staff">
           <div class="container">
@@ -239,8 +236,7 @@
                     </li>
                     <li class="staff__list-item">Футболка (с&nbsp;длинным рукавом, идеально -
                       еще и&nbsp;с&nbsp;капюшоном);</li>
-                    <li class="staff__list-item">Футболка (с&nbsp;длинным рукавом, идеально -
-                      еще и&nbsp;с&nbsp;капюшоном);</li>
+                    <li class="staff__list-item">Штаны (именно штаны) ходовые легкие;</li>
                     <li class="staff__list-item">Кепка/панама;
                     </li>
                     <li class="staff__list-item">Палки треккинговые;
@@ -287,6 +283,7 @@
               </div>
               <button class="staff__btn btn btn--filled" type="button">Полный список снаряжения</button>
             </div>
+          </div>
         </section>
         <section class="training main__section" id="training">
           <div class="container">
@@ -329,10 +326,94 @@
               <p class="training__text main__section-text">Подробнее обсудим&nbsp;в <a
                   class="training__link main__section-link" href="#">чате</a>.</p>
             </div>
+          </div>
+        </section>
+        <section class="tour-info main__section" id="tour-info">
+          <div class="container">
+            <div class="tour-info__content">
+              <h2 class="tour-info__title main__section-title">Стоимость</h2>
+              <h3 class="tour-info__text-title main__section-text-title">75 500 р.</h3>
+              <p class="tour-info__text main__section-text"><strong>Включено в стоимость:</strong></p>
+              <ul class="tour-info__list">
+                <li class="tour-info__list-item">
+                  <p class="tour-info__text main__section-text">
+                    Переезд на&nbsp;заказном транспорте от&nbsp;Дербента до&nbsp;с. Кубачи
+                  </p>
+                </li>
+                <li class="tour-info__list-item">
+                  <p class="tour-info__text main__section-text">Переезд заказным транспортом от&nbsp;с. Кумух до&nbsp;с.
+                    Согратль</p>
+                </li>
+                <li class="tour-info__list-item">
+                  <p class="tour-info__text main__section-text">Переезд на&nbsp;заказном транспорте от&nbsp;с. Карадах
+                    до&nbsp;г. Махачкала</p>
+                </li>
+                <li class="tour-info__list-item">
+                  <p class="tour-info__text main__section-text">Ночевка в&nbsp;Дербенте (1)</p>
+                </li>
+                <li class="tour-info__list-item">
+                  <p class="tour-info__text main__section-text">Ночевки в&nbsp;гостевых домах по&nbsp;программе тура (6
+                    + 1&nbsp;кемпинг)</p>
+                </li>
+                <li class="tour-info__list-item">
+                  <p class="tour-info__text main__section-text">Питание на&nbsp;активной части маршрута
+                    (завтрак/ужин-сублиматы, обед&nbsp;&mdash; сублиматы + перекус тем, что
+                    купим по
+                    пути в&nbsp;населенном пункте)</p>
+                </li>
+                <li class="tour-info__list-item">
+                  <p class="tour-info__text main__section-text">Газ, газовое оборудование, групповая посуда</p>
+                </li>
+                <li class="tour-info__list-item">
+                  <p class="tour-info__text main__section-text">Завтраки в&nbsp;гостевом доме (6)</p>
+                </li>
+                <li class="tour-info__list-item">
+                  <p class="tour-info__text main__section-text">Cнаряжение при необходимости (палатки)</p>
+                </li>
+                <li class="tour-info__list-item">
+                  <p class="tour-info__text main__section-text">Групповая аптечка</p>
+                </li>
+                <li class="tour-info__list-item">
+                  <p class="tour-info__text main__section-text">Организация всего приключения (маршрут, логистика,
+                    снабжение),
+                    организационная поддержка на&nbsp;маршруте</p>
+                </li>
+                <li class="tour-info__list-item">
+                  <p class="tour-info__text main__section-text">Фотограф</p>
+                </li>
+              </ul>
+              <p class="tour-info__text main__section-text"><strong>Отдельно:</strong></p>
+              <ul class="tour-info__list">
+                <li class="tour-info__list-item">
+                  <p class="tour-info__text main__section-text">
+                    Авиабилеты до г. Махачкала
+                  </p>
+                </li>
+                <li class="tour-info__list-item">
+                  <p class="tour-info__text main__section-text">Ночевка в Махачкале при необходимости перед вылетом</p>
+                </li>
+                <li class="tour-info__list-item">
+                  <p class="tour-info__text main__section-text">Автобус либо трансфер Махачкала - Дербент</p>
+                </li>
+                <li class="tour-info__list-item">
+                  <p class="tour-info__text main__section-text">Страховка</p>
+                </li>
+                <li class="tour-info__list-item">
+                  <p class="tour-info__text main__section-text">Оплата входа на достопримечательности/музеи/экскурсии
+                  </p>
+                </li>
+                <li class="tour-info__list-item">
+                  <p class="tour-info__text main__section-text">Самостоятельное питание (обеды в кафе по пути, ужины в
+                    гостевых домах, питание в Махачкале и Дербенте)</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
         <section class="chat main__section" id="chat">
           <div class="container">
             <div class="chat__content">
+              <h2 class="chat__title main__section-title visually-hidden">Присоединяйся к&nbsp;чату приключения</h2>
               <a class="chat__link link" href="#" aria-label="телеграм-чат приключения">
                 <svg width="50" height="50" aria-hidden="true">
                   <use xlink:href="images/sprite.svg#telegram"></use>
@@ -340,22 +421,26 @@
                 <span class="chat__link-text">Присоединяйся к&nbsp;чату приключения</span>
               </a>
             </div>
+          </div>
         </section>
       </div>
+      <button id="scroll-top" class="main__btn btn btn--icon-top" type="button" aria-label="Наверх">
+        <svg width="50" height="50" aria-hidden="true">
+          <use xlink:href="images/sprite.svg#arrow-up"></use>
+        </svg>
+      </button>
     </main>
 
     <footer class="footer">
       <div class="container">
         <div class="footer__content">
-          <a href="#" class="footer__logo-link">
-            <img src="images/footer__logo.png" alt="лого девушки-походницы" width="107" height="85">
-          </a>
-          <a class="footer__link" href="#">
-            <span class="footer__link-text">Куда мы&nbsp;еще идем в&nbsp;2026 году</span>
+          <img class="footer__logo" src="images/footer__logo.png" alt="лого девушки-походницы" width="107" height="85">
+          <button id="schedule" class="footer__btn btn" type="button">
+            <span class="footer__btn-text">Куда мы&nbsp;еще идем в&nbsp;2026 году</span>
             <svg width="81" height="74" aria-hidden="true">
               <use xlink:href="images/sprite.svg#schedule"></use>
             </svg>
-          </a>
+          </button>
         </div>
       </div>
     </footer>

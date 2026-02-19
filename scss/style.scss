@@ -16,7 +16,6 @@
 /* Blocks */
 /* ------------------------------------ */
 @use "blocks/_btn";
-@use "blocks/_burger";
 @use "../scss/blocks/header";
 @use "../scss/blocks/nav";
 @use "../scss/blocks/main";
@@ -28,8 +27,10 @@
 @use "blocks/_route";
 @use "blocks/_staff";
 @use "blocks/_training";
+@use "blocks/_tour-info";
 @use "blocks/_chat";
 @use "blocks/_footer";
 
+@use "blocks/_hikes-section";
 @use "blocks/_staff-section";
 @use "blocks/_route-section";

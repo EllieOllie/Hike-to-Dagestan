@@ -17,7 +17,18 @@ function getButtonEl(parentEl, className = '', type = '', text = '') {
   return buttonEl
 }
 
+// Получение элемента ссылки
+function getLinkEl(parentEl, className = '', href = '', text = '') {
+  const linkEl = document.createElement('a')
+  linkEl.setAttribute('class', className)
+  linkEl.href = href
+  linkEl.textContent = text;
+  parentEl.append(linkEl);
+  return linkEl
+}
+
 export {
   getEl,
   getButtonEl,
+  getLinkEl
 }
