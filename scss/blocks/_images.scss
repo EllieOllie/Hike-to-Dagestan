@@ -12,18 +12,24 @@
 
   &__content {
     position: relative;
+    gap: 0;
   }
 
 
   &__list {
     list-style-type: none;
     display: flex;
-    gap: 40px;
     padding-left: 0;
     margin: 0;
+
+    @include vp-1023 {
+      flex-basis: 100%;
+    }
   }
 
   &__list-item {
+    // height: 650px;
+
     @include vp-1023 {
       flex-basis: 100%;
 
@@ -37,18 +43,32 @@
     padding: 10px;
     position: absolute;
     height: 100%;
+    z-index: 100;
+
+    &:disabled {
+      pointer-events: none;
+
+      svg {
+        color: variables.$color-black;
+      }
+    }
 
     svg {
       color: variables.$color-white;
       transition: color 0.3s ease;
+
+      @include vp-767 {
+        width: 40px;
+        height: 40px;
+      }
     }
 
-    &--left {
-      right: 0;
-    }
-
-    &--right {
+    &--prev {
       left: 0;
+    }
+
+    &--next {
+      right: 0;
     }
 
     &:hover svg,

@@ -7,13 +7,8 @@ export default function home() {
   // const homePage = appEl.innerHTML
 
 
-  const staffBtn = document.body.querySelector('.staff__btn')
   const routeBtn = document.body.querySelector('.route__btn')
   const hikesBtn = document.body.querySelector('#schedule')
-
-  staffBtn.addEventListener("click", function () {
-    navigate("staff")
-  })
 
   routeBtn.addEventListener("click", function () {
     navigate("route")

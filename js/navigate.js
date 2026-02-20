@@ -9,12 +9,6 @@ export async function navigate(pageName) {
       routePage.default(appEl)
       break
 
-    case "staff":
-      appEl.innerHTML = ''
-      const staffPage = await import('./staff.js')
-      staffPage.default(appEl)
-      break
-
     case "hikes":
       appEl.innerHTML = ''
       const hikesPage = await import('./hikes.js')

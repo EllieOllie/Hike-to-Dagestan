@@ -36,6 +36,9 @@
               <li class="nav__list-item">
                 <a class="nav__list-link" href="#training">Подготовка</a>
               </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="#tour-info">Стоимость</a>
+              </li>
             </ul>
           </nav>
           <a class="header__link link" href="#" aria-label="телеграм-чат приключения">
@@ -122,8 +125,7 @@
                   по&nbsp;территории
                   Португалии
                   и&nbsp;Испании за&nbsp;10&nbsp;дней.
-                  Вдохновившись камино и&nbsp;опираясь на&nbsp;наш обоюдный туристический опыт, мы&nbsp;решили пройти
-                  Кавказскую тропу.
+                  На очереди вторая мечта - кавказская тропа.
                 </p>
                 <p class="about__text main__section-text">Длина Кавказской тропы составляет более 1300&nbsp;км.
                   Тропа протягивается вдоль большого Кавказского хребта, от&nbsp;Каспийского моря, начинаясь
@@ -140,30 +142,34 @@
           <div class="container">
             <h2 class="images__title main__section-title">Галерея изображений</h2>
             <div class="images__content main__section-content">
-              <ul class="images__list">
-                <li class="images__list-item">
-                  <figure class="image">
-                    <img class="image__item" src="images/gunib.jpg" alt="Вид на гуниб с поляны Айвазовского">
-                    <figcaption class="image__description">Вид на&nbsp;гуниб с&nbsp;поляны Айвазовского</figcaption>
-                  </figure>
-                </li>
-                <li class="images__list-item">
-                  <figure class="image">
-                    <img class="image__item" src="images/kubachi.jpg" alt="Кубачи на закате">
-                    <figcaption class="image__description">Кубачи на закате</figcaption>
-                  </figure>
-                </li>
-              </ul>
-              <button class="images__btn images__btn--left btn" type="button" aria-label="влево">
-                <svg width="50" height="50" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#arrow-right"></use>
-                </svg>
-              </button>
-              <button class="images__btn images__btn--right btn" type="button" aria-label="вправо">
-                <svg width="50" height="50" aria-hidden="true">
-                  <use xlink:href="images/sprite.svg#arrow-left"></use>
-                </svg>
-              </button>
+              <div class="images__navigation">
+                <button class="images__btn images__btn--prev btn" type="button" aria-label="листать назад" disabled>
+                  <svg width="50" height="50" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#arrow-left"></use>
+                  </svg>
+                </button>
+                <button class="images__btn images__btn--next btn" type="button" aria-label="листать вперед">
+                  <svg width="50" height="50" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="images__slider swiper">
+                <ul class="images__list swiper-wrapper">
+                  <!-- <li class="images__list-item">
+                    <figure class="image">
+                      <img class="image__item" src="images/gunib.jpg" alt="Вид на гуниб с поляны Айвазовского">
+                      <figcaption class="image__description">Вид на&nbsp;гуниб с&nbsp;поляны Айвазовского</figcaption>
+                    </figure>
+                  </li>
+                  <li class="images__list-item">
+                    <figure class="image">
+                      <img class="image__item" src="images/kubachi.jpg" alt="Кубачи на закате">
+                      <figcaption class="image__description">Кубачи на закате</figcaption>
+                    </figure>
+                  </li> -->
+                </ul>
+              </div>
             </div>
           </div>
         </section>
@@ -474,7 +480,7 @@
           <div class="container">
             <div class="tour-info__content">
               <h2 class="tour-info__title main__section-title">Стоимость</h2>
-              <h3 class="tour-info__text-title main__section-text-title">75 500 р.</h3>
+              <h3 class="tour-info__text-title main__section-text-title"><strong>75 500 р.</strong></h3>
               <p class="tour-info__text main__section-text"><strong>Включено в стоимость:</strong></p>
               <ul class="tour-info__list">
                 <li class="tour-info__list-item">
