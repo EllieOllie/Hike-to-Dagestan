@@ -5,13 +5,13 @@ export async function navigate(pageName) {
   switch (pageName) {
     case "route":
       appEl.innerHTML = ''
-      const routePage = await import('./route.js')
+      const routePage = await import('../route.js')
       routePage.default(appEl)
       break
 
     case "hikes":
       appEl.innerHTML = ''
-      const hikesPage = await import('./hikes.js')
+      const hikesPage = await import('../hikes.js')
       hikesPage.default(appEl)
       break
 

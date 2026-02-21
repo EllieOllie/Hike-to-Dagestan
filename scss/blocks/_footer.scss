@@ -33,14 +33,20 @@
       }
     }
 
-    &:hover .footer__btn-text,
-    &:focus-visible .footer__btn-text {
-      color: variables.$color-peach;
+    @media (hover: hover) {
+
+      &:hover .footer__btn-text,
+      &:focus-visible .footer__btn-text {
+        color: variables.$color-peach;
+      }
     }
 
-    &:hover svg,
-    &:focus-visible svg {
-      fill: variables.$color-black;
+    @media (hover: hover) {
+
+      &:hover svg,
+      &:focus-visible svg {
+        fill: variables.$color-black;
+      }
     }
   }
 

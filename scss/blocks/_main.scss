@@ -94,9 +94,12 @@
     text-underline-offset: 3px;
     transition: color 0.3s ease-in;
 
-    &:hover,
-    &:focus-visible {
-      color: variables.$color-peach;
+    @media (hover: hover) {
+
+      &:hover,
+      &:focus-visible {
+        color: variables.$color-peach;
+      }
     }
   }
 

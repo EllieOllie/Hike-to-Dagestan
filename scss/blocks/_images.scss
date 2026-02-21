@@ -2,7 +2,6 @@
 @use "../global/mixins" as *;
 
 .images {
-
   &__title {
     @include vp-1023 {
       color: variables.$color-white;
@@ -13,8 +12,19 @@
   &__content {
     position: relative;
     gap: 0;
-  }
 
+    & .swiper-pagination {
+      bottom: 10px;
+    }
+
+    & .swiper-pagination-bullet {
+      width: 15px;
+      height: 15px;
+      font-size: 20px;
+      line-height: 24px;
+      background-color: variables.$color-white;
+    }
+  }
 
   &__list {
     list-style-type: none;
@@ -28,14 +38,8 @@
   }
 
   &__list-item {
-    // height: 650px;
-
     @include vp-1023 {
       flex-basis: 100%;
-
-      &:last-child {
-        display: none;
-      }
     }
   }
 
@@ -71,9 +75,12 @@
       right: 0;
     }
 
-    &:hover svg,
-    &:focus-visible svg {
-      color: variables.$color-peach;
+    @media (hover: hover) {
+
+      &:hover svg,
+      &:focus-visible svg {
+        color: variables.$color-peach;
+      }
     }
   }
 }

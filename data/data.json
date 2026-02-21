@@ -2,46 +2,51 @@
   {
     "id": 1,
     "name": "Вид на&nbsp;Гуниб с&nbsp;поляны Айвазовского",
-    "image": "images/gunib.jpg"
+    "image": "images/images/gunib.jpg"
   },
   {
     "id": 2,
     "name": "Кубачи на закате",
-    "image": "images/kubachi.jpg"
+    "image": "images/images/kubachi.jpg"
   },
   {
     "id": 3,
     "name": "Водопад Салта",
-    "image": "images/salta.jpg"
+    "image": "images/images/salta.jpg"
   },
   {
     "id": 4,
     "name": "Карадахская теснина",
-    "image": "images/tesnina.jpg"
+    "image": "images/images/tesnina.jpg"
   },
   {
     "id": 5,
     "name": "Заброшенное село Гамсутль",
-    "image": "images/gamsutl.jpg"
+    "image": "images/images/gamsutl.jpg"
   },
   {
     "id": 6,
     "name": "Старейшая в Дагестане подземная мечеть",
-    "image": "images/kumuh.jpg"
+    "image": "images/images/kumuh.jpg"
   },
   {
     "id": 7,
     "name": "Гунибское плато (гора Маяк)",
-    "image": "images/mayak.jpg"
+    "image": "images/images/mayak.jpg"
   },
   {
     "id": 8,
     "name": "Дербентская крепость Нарын-Кала",
-    "image": "images/derbent.jpg"
+    "image": "images/images/derbent.jpg"
   },
   {
     "id": 9,
     "name": "Царский тоннель",
-    "image": "images/tonnel.jpg"
+    "image": "images/images/tonnel.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Гунибское плато",
+    "image": "images/images/plato.jpg"
   }
 ]

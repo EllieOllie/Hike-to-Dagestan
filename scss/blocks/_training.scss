@@ -10,7 +10,6 @@
     background-color: transparent;
   }
 
-
   &__title {
     color: variables.$color-white;
   }
@@ -38,7 +37,6 @@
     gap: 20px;
     color: variables.$color-white;
     list-style: none;
-    list-style-image: url('../images/gym.png');
 
     @include vp-767 {
       gap: 10px;
@@ -69,11 +67,11 @@
     }
 
     &:first-child::before {
-      background-image: url('../images/gym.png');
+      background-image: url('../images/training/gym.png');
     }
 
     &:last-child::before {
-      background-image: url('../images/running.png');
+      background-image: url('../images/training/running.png');
     }
   }
 

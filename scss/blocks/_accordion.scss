@@ -5,13 +5,17 @@
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  gap: 20px;
   border-radius: 2px;
   $root: &;
 
   &__element {
     border-bottom: 1px solid variables.$color-transparent-bg;
-    padding: 0 0 24px;
+
+    @media (hover: hover) {
+      &:hover:not(:focus-visible) {
+        border-color: variables.$color-peach;
+      }
+    }
   }
 
   &__btn {
@@ -22,9 +26,28 @@
     width: 100%;
     text-align: left;
     color: variables.$color-black;
-    padding: 0 72px 0 0;
+    padding: 20px 40px 20px 0;
     position: relative;
     cursor: pointer;
+    transition: color 0.3s ease;
+
+    @media (hover: hover) {
+
+      &:hover:not(:focus-visible),
+      &:focus-visible {
+        color: variables.$color-peach;
+      }
+    }
+
+    @media (hover: hover) {
+
+      &:hover:not(:focus-visible) .accordion__btn-icon::before,
+      &:hover:not(:focus-visible) .accordion__btn-icon::after,
+      &:focus-visible .accordion__btn-icon::before,
+      &:focus-visible .accordion__btn-icon::after {
+        background-color: variables.$color-peach;
+      }
+    }
 
     &::before {
       content: "";
@@ -37,12 +60,8 @@
     }
 
     &--active {
-      #{$root}__btn-icon::after {
-        opacity: 0;
-      }
-
-      +#{$root}__content {
-        display: flex;
+      #{$root}__btn-icon {
+        transform: rotate(45deg);
       }
     }
   }
@@ -62,8 +81,9 @@
     position: absolute;
     height: 32px;
     width: 32px;
-    top: 0;
+    top: 15px;
     right: 0;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 
     &::before,
     &::after {
@@ -86,11 +106,13 @@
   }
 
   &__content {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: all 0.3s ease-in-out;
   }
 
   &__inner {
-    padding: 12px 0 0;
+    padding: 0 0 20px 0;
   }
-
 }

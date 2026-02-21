@@ -1,4 +1,4 @@
-import { getEl } from './components.js'
+import { getEl } from '../components.js'
 import { createCard } from './templates/image-card.js';
 
 const imagesNavigation = document.querySelector('.images__navigation');
@@ -15,7 +15,7 @@ const createSlide = (data) => {
 const createSlider = () => {
   return new Swiper(imagesSlider, {
     slidesPerView: 1,
-    spaceBetween: 20,
+    spaceBetween: 0,
     breakpoints: {
       767: {
         slidesPerView: 2,
@@ -26,7 +26,26 @@ const createSlider = () => {
       prevEl: '.images__btn--prev',
       nextEl: '.images__btn--next',
     },
-
+    // pagination: {
+    //   el: '.swiper-pagination',
+    //   clickable: true,
+    //   dynamicBullets: true,
+    // },
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    //   draggable: true,
+    // },
+    mousewheel: {
+      sensivity: 1,
+    },
+    // autoplay: {
+    //   delay: 1000,
+    //   disableOnInteraction: true,
+    // },
+    speed: 1000,
+    loop: false,
+    a11y: false,
+    keyboard: true,
   });
 };
 

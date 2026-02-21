@@ -2,7 +2,7 @@
 @use "../global/mixins" as *;
 
 .chat {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/chat-bg.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/chat/chat-bg.jpg');
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -40,14 +40,20 @@
       }
     }
 
-    &:hover svg,
-    &:focus-visible svg {
-      fill: variables.$color-white;
+    @media (hover: hover) {
+
+      &:hover svg,
+      &:focus-visible svg {
+        fill: variables.$color-white;
+      }
     }
 
-    &:hover .chat__link-text,
-    &:focus-visible .chat__link-text {
-      color: variables.$color-peach;
+    @media (hover: hover) {
+
+      &:hover .chat__link-text,
+      &:focus-visible .chat__link-text {
+        color: variables.$color-peach;
+      }
     }
   }
 

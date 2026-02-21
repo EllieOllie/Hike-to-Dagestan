@@ -1,4 +1,4 @@
-import { getEl, getLinkEl } from './components.js'
+import { getEl, getLinkEl } from '../components.js'
 import { navigate } from './navigate.js'
 
 export default function route() {

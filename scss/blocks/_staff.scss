@@ -4,7 +4,7 @@
 .staff {
   padding: 60px 0 80px;
   background-color: variables.$color-lightpeach;
-  background-image: url(../../images/staff.webp);
+  background-image: url(../../images/staff/staff.webp);
   background-repeat: no-repeat;
   background-position: right 0;
   background-size: 500px;
@@ -47,6 +47,9 @@
   &__list {
     margin: 0;
     padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
   }
 
   &__list-item {
