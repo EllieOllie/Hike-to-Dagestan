@@ -1,0 +1,55 @@
+@use "../global/variables";
+@use "../global/mixins" as *;
+
+.hikes-table {
+  margin-bottom: 40px;
+  font-size: 22px;
+  line-height: 24px;
+  background-color: variables.$color-peach-bg;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__caption {
+    margin-bottom: 20px;
+  }
+
+  &__th {
+    padding: 10px;
+    background-color: variables.$color-white;
+
+    @include vp-767 {
+      word-break: break-all;
+      padding: 2px;
+    }
+  }
+
+  &__th:nth-child(1) {
+    width: 20%;
+  }
+
+  &__th:nth-child(2) {
+    width: 19%;
+  }
+
+  &__th:nth-child(3) {
+    width: 16%;
+  }
+
+  &__th:nth-child(4) {
+    width: 20%;
+  }
+
+  &__td {
+    padding: 10px;
+    text-align: center;
+    background-color: variables.$color-peach-bg;
+
+    @include vp-767 {
+      word-break: break-all;
+      padding: 2px;
+    }
+  }
+}

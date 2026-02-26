@@ -3,6 +3,7 @@
 
 .main {
   scroll-behavior: smooth;
+  position: relative;
   flex: 1;
 
   &__section {
@@ -14,6 +15,7 @@
   }
 
   &__section-title {
+    font-family: variables.$ff-intro;
     font-size: 36px;
     font-weight: 600;
     line-height: 36px;
@@ -92,9 +94,12 @@
     text-underline-offset: 3px;
     transition: color 0.3s ease-in;
 
-    &:hover,
-    &:focus-visible {
-      color: variables.$color-peach;
+    @media (hover: hover) {
+
+      &:hover,
+      &:focus-visible {
+        color: variables.$color-peach;
+      }
     }
   }
 

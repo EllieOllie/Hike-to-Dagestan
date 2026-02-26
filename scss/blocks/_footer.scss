@@ -15,15 +15,14 @@
     align-items: center;
   }
 
-  &__logo-link {
-    img {
-      @include vp-767 {
-        width: 80px;
-      }
+  &__logo {
+    @include vp-767 {
+      width: 80px;
     }
   }
 
-  &__link {
+
+  &__btn {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -34,18 +33,24 @@
       }
     }
 
-    &:hover .footer__link-text,
-    &:focus-visible .footer__link-text {
-      color: variables.$color-peach;
+    @media (hover: hover) {
+
+      &:hover .footer__btn-text,
+      &:focus-visible .footer__btn-text {
+        color: variables.$color-peach;
+      }
     }
 
-    &:hover svg,
-    &:focus-visible svg {
-      fill: variables.$color-black;
+    @media (hover: hover) {
+
+      &:hover svg,
+      &:focus-visible svg {
+        fill: variables.$color-black;
+      }
     }
   }
 
-  &__link-text {
+  &__btn-text {
     width: 180px;
     color: variables.$color-white;
     font-size: 18px;

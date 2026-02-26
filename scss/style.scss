@@ -1,35 +1,40 @@
 /* Vendor */
 /* ------------------------------------ */
-// @use "vendor/swiper.scss";
+@use "vendor/swiper.scss";
 
 /* Global */
 /* ------------------------------------ */
-@use "../scss/global/normalize";
-@use "../scss/global/variables";
-@use "../scss/global/mixins";
-@use "../scss/global/fonts";
-@use "../scss/global/reboot";
-@use "../scss/global/container";
-@use "../scss/global/visually-hidden";
+@use "global/normalize";
+@use "global/variables";
+@use "global/mixins";
+@use "global/fonts";
+@use "global/reboot";
+@use "global/container";
+@use "global/visually-hidden";
 
 
 /* Blocks */
 /* ------------------------------------ */
-@use "blocks/_btn";
-@use "blocks/_burger";
-@use "../scss/blocks/header";
-@use "../scss/blocks/nav";
-@use "../scss/blocks/main";
-@use "../scss/blocks/hero";
-@use "blocks/_trip";
-@use "blocks/_about";
-@use "blocks/_images";
-@use "blocks/_image";
-@use "blocks/_route";
-@use "blocks/_staff";
-@use "blocks/_training";
-@use "blocks/_chat";
-@use "blocks/_footer";
 
-@use "blocks/_staff-section";
-@use "blocks/_route-section";
+
+@use "blocks/btn";
+@use "blocks/link";
+@use "blocks/header";
+@use "blocks/nav";
+@use "blocks/main";
+@use "blocks/hero";
+@use "blocks/trip";
+@use "blocks/about";
+@use "blocks/images";
+@use "blocks/image";
+@use "blocks/route";
+@use "blocks/staff";
+@use "blocks/accordion";
+@use "blocks/training";
+@use "blocks/tour-info";
+@use "blocks/chat";
+@use "blocks/footer";
+
+@use "blocks/hikes-section";
+@use "blocks/hikes-table";
+@use "blocks/route-section";

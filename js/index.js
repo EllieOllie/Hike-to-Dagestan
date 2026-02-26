@@ -1,9 +1,14 @@
-import { navigate } from './navigate.js'
-import { getBurger } from './burger.js'
+// import { navigate } from './components/navigate.js'
+import { btnUpScroll } from './components/btn-up.js'
+import { initImages } from './components/image-gallery.js';
+import { initAccordion } from './components/accordion.js';
 
+document.addEventListener('DOMContentLoaded', function () {
 
-// Запуск приложения
-navigate('home')
+  // Запуск приложения
+  // navigate('home')
 
-// Бургер-меню
-getBurger()
+  btnUpScroll()
+  initImages()
+  initAccordion()
+})
