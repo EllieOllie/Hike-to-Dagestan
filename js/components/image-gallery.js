@@ -10,5 +10,5 @@ const onGetDataError = (error) => {
 };
 
 export const initImages = () => {
-  getData('./data/data.json', onGetDataSuccess, onGetDataError)
+  getData('./data/data-images.json', onGetDataSuccess, onGetDataError)
 }
