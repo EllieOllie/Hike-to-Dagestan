@@ -1,0 +1,29 @@
+@use "../global/variables";
+@use "../global/mixins" as *;
+
+.rules-section {
+  padding: 40px 0 100px;
+
+  @include vp-767 {
+    background-color: variables.$color-white;
+  }
+
+
+  &__title {
+    margin: 0;
+  }
+
+  &__content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    margin: 0;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}

@@ -15,6 +15,12 @@ export async function navigate(pageName) {
       hikesPage.default(appEl)
       break
 
+    case "rules":
+      appEl.innerHTML = ''
+      const rulesPage = await import('./rules.js')
+      rulesPage.default(appEl)
+      break
+
     default:
       const homePage = await import('./home.js')
       homePage.default(appEl)

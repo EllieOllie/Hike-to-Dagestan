@@ -1,0 +1,58 @@
+@use "../global/variables";
+@use "../global/mixins" as *;
+
+.route-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+
+  @include vp-1023 {
+    flex-direction: column;
+  }
+
+  &__content {
+    flex-basis: 50%;
+    padding: 20px;
+  }
+
+  &__title {
+    margin: 0 0 20px;
+  }
+
+  &__description {
+    margin-bottom: 50px;
+  }
+
+  &__summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  &__image {
+    position: relative;
+    margin: 0;
+  }
+
+  &__img {
+    width: 570px;
+    height: 450px;
+    object-position: top;
+
+    @include vp-1023 {
+      width: 100%;
+    }
+  }
+
+  &__img-caption {
+    position: absolute;
+    content: '';
+    bottom: 25px;
+    right: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: variables.$color-white;
+    text-shadow: 2px 2px 10px variables.$color-black;
+  }
+}

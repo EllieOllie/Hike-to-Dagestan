@@ -10,7 +10,7 @@ const createSlide = (data) => {
   const card = getEl(cardParent, 'li', 'images__list-item swiper-slide')
   card.innerHTML = createCard(data)
   return card
-};
+}
 
 const createSlider = () => {
   return new Swiper(imagesSlider, {
