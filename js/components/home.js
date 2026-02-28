@@ -8,14 +8,19 @@ export default function home() {
 
 
   const routeBtn = document.body.querySelector('.route__btn')
-  const hikesBtn = document.body.querySelector('#schedule')
+  // const hikesBtn = document.body.querySelector('#schedule')
+  const rulesBtn = document.body.querySelector('#rules')
 
   routeBtn.addEventListener("click", function () {
     navigate("route")
   })
 
-  hikesBtn.addEventListener("click", function () {
-    navigate("hikes")
+  // hikesBtn.addEventListener("click", function () {
+  //   navigate("hikes")
+  // })
+
+  rulesBtn.addEventListener("click", function () {
+    navigate("rules")
   })
 
 }

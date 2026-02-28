@@ -8,6 +8,33 @@ const createCard = (data) => {
           </figure>`
 }
 
+const createRouteCard = (data) => {
+  const id = data.id
+  const day = data.day
+  const image = data.image
+  const description = data.description
+  const distance = data.distance
+  const climb = data.climb
+  const sleep = data.sleep
+  const text = data.text
+  return `<div class="route-card data-id="${id}">
+            <div class="route-card__content">
+              <h2 class="route-card__title main__section-text-title">${day} день похода</h2>
+              <p class="route-card__description main__section-text">${text}</p>
+              <div class="route-card__summary">
+                <span class="route-card__distance">Расстояние <b>${distance}</b> км</span>
+                <img class="route-card__sleep" src="${sleep}" alt="ночевка" width="60"
+            height="60">
+                <span class="route-card__climb">Набор высоты <b>${climb}</b> м</span>
+              </div>
+            </div>
+            <figure class="route-card__image">
+              <img src="${image}" alt="${description}" class="route-card__img">
+              <figcaption class="route-card__img-caption">${description}</figcaption>
+            </figure>
+          </div>`
+}
+
 const createTableRow = (data) => {
   const id = data.id
   const name = data.name
@@ -24,8 +51,8 @@ const createTableRow = (data) => {
           </tr>`
 }
 
-
 export {
   createCard,
+  createRouteCard,
   createTableRow
 }
