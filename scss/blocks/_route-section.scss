@@ -16,11 +16,12 @@
       font-weight: 600;
       font-size: 24px;
       line-height: 28px;
-    }
-  }
 
-  &__title {
-    margin: 0;
+      @include vp-1023 {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
   }
 
   &__content {
@@ -38,6 +39,10 @@
     flex-direction: column;
     align-items: center;
     gap: 40px;
+
+    @include vp-1023 {
+      gap: 20px;
+    }
   }
 
   &__list-item {
@@ -58,5 +63,9 @@
 
   &__link {
     color: variables.$color-white;
+  }
+
+  &__image {
+    width: 90%;
   }
 }

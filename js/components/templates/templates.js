@@ -22,10 +22,10 @@ const createRouteCard = (data) => {
               <h2 class="route-card__title main__section-text-title">${day} день похода</h2>
               <p class="route-card__description main__section-text">${text}</p>
               <div class="route-card__summary">
-                <span class="route-card__distance">Расстояние <b>${distance}</b> км</span>
+                <span class="route-card__distance">Расстояние <b>${distance}</b>&nbsp;км</span>
                 <img class="route-card__sleep" src="${sleep}" alt="ночевка" width="60"
             height="60">
-                <span class="route-card__climb">Набор высоты <b>${climb}</b> м</span>
+                <span class="route-card__climb">Набор высоты <b>${climb}</b>&nbsp;м</span>
               </div>
             </div>
             <figure class="route-card__image">
