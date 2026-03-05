@@ -1,3 +1,6 @@
+// import { getEl } from '../components.js'
+// import { createAccordionElement } from './templates/templates.js'
+
 const accordions = document.querySelectorAll(".accordion__element");
 
 const onAccordionBtnClick = (e) => {

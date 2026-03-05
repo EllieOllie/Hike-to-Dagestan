@@ -6,13 +6,13 @@
   },
   {
     "id": 2,
-    "name": "Кубачи на закате",
-    "image": "images/images/kubachi.jpg"
+    "name": "Водопад Салта",
+    "image": "images/images/salta.jpg"
   },
   {
     "id": 3,
-    "name": "Водопад Салта",
-    "image": "images/images/salta.jpg"
+    "name": "Пирамиды Кудали",
+    "image": "images/images/kudali.jpg"
   },
   {
     "id": 4,
@@ -22,31 +22,41 @@
   {
     "id": 5,
     "name": "Заброшенное село Гамсутль",
-    "image": "images/images/gamsutl.jpg"
+    "image": "images/images/gamsutl2.jpg"
   },
   {
     "id": 6,
-    "name": "Старейшая в Дагестане подземная мечеть",
-    "image": "images/images/kumuh.jpg"
-  },
-  {
-    "id": 7,
     "name": "Гунибское плато (гора Маяк)",
     "image": "images/images/mayak.jpg"
   },
   {
+    "id": 7,
+    "name": "Царский тоннель",
+    "image": "images/images/tonnel.jpg"
+  },
+  {
     "id": 8,
-    "name": "Дербентская крепость Нарын-Кала",
-    "image": "images/images/derbent.jpg"
+    "name": "Окрестности села Чох",
+    "image": "images/images/choh2.jpg"
   },
   {
     "id": 9,
-    "name": "Царский тоннель",
-    "image": "images/images/tonnel.jpg"
+    "name": "Каньон Салта",
+    "image": "images/images/salta2.jpg"
   },
   {
     "id": 10,
     "name": "Гунибское плато",
     "image": "images/images/plato.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Карадахская теснина",
+    "image": "images/images/tesnina3.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Окрестности села Чох",
+    "image": "images/images/choh3.jpg"
   }
 ]

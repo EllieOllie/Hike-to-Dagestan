@@ -11,8 +11,9 @@
   }
 
   &__content {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
   }
 
   &__map {
@@ -20,6 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-basis: 50%;
     position: relative;
 
     & iframe {
@@ -28,7 +30,7 @@
   }
 
   &__caption {
-    width: 80%;
+    width: 95%;
     margin: 0;
     padding: 10px;
     position: absolute;
@@ -51,21 +53,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-basis: 50%;
     gap: 20px;
     padding: 10px;
     border-radius: 2px;
     background-color: variables.$color-lightbeige;
   }
-
-  // &__text--ellipsis {
-
-  //   @include vp-1023 {
-  //     display: -webkit-box;
-  //     -webkit-line-clamp: 2;
-  //     -webkit-box-orient: vertical;
-  //     overflow: hidden;
-  //     text-overflow: ellipsis;
-  //     max-height: 3em;
-  //   }
-  // }
 }

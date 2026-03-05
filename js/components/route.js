@@ -13,9 +13,9 @@ export default function route() {
   const routeContainer = getEl(routeSection, 'div', 'container')
   const routeContent = getEl(routeContainer, 'div', 'route-section__content main__section-content')
 
-  const routeTextBefore = getEl(routeContent, 'p', 'route-section__text main__section-text', 'Встречаемся в Дербенте, погуляем, отдохнем и на следующи день отправимся в горы в с. Кубачи, где переночуем, чтобы акклиматизироваться и на следующий день выйти на маршрут.')
+  const routeTextBefore = getEl(routeContent, 'p', 'route-section__text main__section-text', 'На поездку нужно заложить 11 дней от дня прилета до дня вылета включительно. Встречаемся в Махачкале.')
 
-  const routeTextWarning = getEl(routeContent, 'p', 'route-section__text route-section__text--warning main__section-text', 'Важно! Маршрут корректируется в процессе прохождения тропы, ориентируясь на погоду, стихийные природные явления и самочувствие всех участников похода. Ниже - только план, а по факту, маршрут может быть измерен, могут быть заменены, дополнены, либо исключены некоторые точки.')
+  const routeTextWarning = getEl(routeContent, 'p', 'route-section__text route-section__text--warning main__section-text', 'Важно! Маршрут корректируется в процессе прохождения тропы, ориентируясь на погоду, стихийные природные явления и самочувствие всех участников похода. Ниже - только план, а по факту могут быть заменены, дополнены, либо исключены некоторые участки маршрута.')
 
 
   const routeTitle = getEl(routeContent, 'h2', 'route-section__title main__section-title', 'Подробный маршрут треккинга')
@@ -37,11 +37,11 @@ export default function route() {
 
   getData('./data/data-days.json')
 
+  const routeTextAfter = getEl(routeContent, 'p', 'route-section__text route-section__text--white main__section-text', 'В наш маршрут заложен 1 резервный день на случай непогоды, либо других непредвиденных обстоятельств, который мы сможем провести, например, в Гунибе, исследуя его окрестности с многочисленными достопримечательностями.')
 
-
-  const routeTextAfter = getEl(routeContent, 'p', 'route-section__text route-section__text--white main__section-text', 'По пути в Махачкалу можно заехать в село Нижнее Чугли, чтобы посетить уникальный палеонтологический музей, собранный из местных находок. На фото пример экспоната - Ихтиозавр "Чурчума". В такой сохранности нет ни в одном музее мира!')
-
-  const routeImgAfter = getImgEl(routeContent, 'route-section__image', 'images/images/chugli.jpg', 'Палеонтологический музей в селе Нижнее Чугли')
+  const routeFigure = getEl(routeContent, 'figure', 'route-section__figure')
+  const routeFigureImg = getImgEl(routeFigure, 'route-section__image', 'images/images/chugli.jpg', 'Палеонтологический музей в селе Нижнее Чугли')
+  const routeFigcaption = getEl(routeFigure, 'figcaption', 'route-section__description', 'По пути в Махачкалу на обратном пути мы заедем в село Нижнее Чугли, чтобы посетить уникальный палеонтологический музей, собранный из местных находок. На фото пример экспоната - Ихтиозавр "Чурчума". В такой сохранности нет ни в одном музее мира!')
 
   const routeLinkBack = getLinkEl(routeContent, 'route-section__link link', 'index.html', 'Назад на главную страницу')
 

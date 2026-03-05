@@ -8,6 +8,26 @@ const createCard = (data) => {
           </figure>`
 }
 
+// const createAccordionElement = (data) => {
+//   const id = data.id
+//   const name = data.name
+//   const list = data.list
+
+//   return `<div class="accordion__element" data-id="${id}">
+//   <button class="accordion__btn btn" type="button" aria-label="Развернуть список">
+//     <span class="accordion__btn-text">${name}</span>
+//     <span class="accordion__btn-icon"></span>
+//   </button>
+//   <div class="accordion__content">
+//     <div class="accordion__inner">
+
+//       <ol class="staff__list"></ol>
+
+//     </div>
+//   </div>
+// </div>`
+// }
+
 const createRouteCard = (data) => {
   const id = data.id
   const day = data.day
@@ -50,6 +70,7 @@ const createTableRow = (data) => {
             <td class="hikes-table__td">${description}</td>
           </tr>`
 }
+
 
 export {
   createCard,

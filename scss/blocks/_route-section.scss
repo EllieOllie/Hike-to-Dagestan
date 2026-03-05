@@ -7,20 +7,22 @@
   &__text {
     text-align: center;
 
-    &--white {
-      color: variables.$color-white;
-    }
-
     &--warning {
       color: variables.$color-warning;
       font-weight: 600;
-      font-size: 24px;
-      line-height: 28px;
+      font-size: 22px;
+      line-height: 26px;
 
       @include vp-1023 {
         font-size: 18px;
         line-height: 22px;
       }
+    }
+
+    &--white {
+      padding: 10px;
+      color: variables.$color-white;
+      background-color: variables.$color-transparent-bg;
     }
   }
 
@@ -65,7 +67,36 @@
     color: variables.$color-white;
   }
 
-  &__image {
+  &__figure {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__description {
     width: 90%;
+    position: absolute;
+    content: '';
+    bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    color: variables.$color-warning;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: variables.$color-white;
+    background-color: variables.$color-transparent-bg;
+
+    @include vp-1023 {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__image {
+    width: 100%;
   }
 }
