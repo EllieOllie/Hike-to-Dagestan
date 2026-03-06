@@ -10,11 +10,11 @@ export async function navigate(pageName) {
       routePage.default(appEl)
       break
 
-    // case "hikes":
-    //   appEl.innerHTML = ''
-    //   const hikesPage = await import('./hikes.js')
-    //   hikesPage.default(appEl)
-    //   break
+    case "hikes":
+      appEl.innerHTML = ''
+      const hikesPage = await import('./hikes.js')
+      hikesPage.default(appEl)
+      break
 
     case "rules":
       appEl.innerHTML = ''

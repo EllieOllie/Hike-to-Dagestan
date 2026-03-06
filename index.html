@@ -174,9 +174,11 @@
             <h2 class="route__title main__section-title">Маршрут</h2>
             <div class="route__content main__section-content">
               <div class="route__map">
-                <iframe
+                <script type="text/javascript" charset="utf-8" async
+                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A52a316a437f2046b2f90002ca4c3a6f1c443fe6ebe5dbf7a33827d57ededdcff&amp;width=100%&amp;height=650&amp;lang=ru_RU&amp;scroll=true"></script>
+                <!-- <iframe
                   src="https://yandex.ru/map-widget/v1/?um=constructor%3A52a316a437f2046b2f90002ca4c3a6f1c443fe6ebe5dbf7a33827d57ededdcff&amp;source=constructor"
-                  width="100%" height="650" frameborder="0"></iframe>
+                  width="100%" height="650" frameborder="0"></iframe> -->
                 <p class="route__caption">Маршрут похода. Цветом
                   выделены разные
                   дни. Цвет
@@ -211,195 +213,48 @@
             <h2 class="staff__title main__section-title">Снаряжение</h2>
 
             <div class="staff__content main__section-content">
+              <p class="staff__text main__section-text">Участники обязаны иметь с собой все необходимые вещи и
+                снаряжение, указанные в списке.</p>
               <h3 class="staff__text-title main__section-text-title">Все необходимое для похода:</h3>
+
               <div class="staff__lists">
                 <div class="staff__accordion accordion">
-                  <div class="accordion__element">
-                    <button class="accordion__btn btn" type="button" aria-label="Развернуть список"
-                      aria-expanded="false">
-                      <span class="accordion__btn-text">Ходовое</span>
-                      <span class="accordion__btn-icon"></span>
-                    </button>
-                    <div class="accordion__content" aria-hidden="true">
-                      <div class="accordion__inner">
+                  <details class="accordion__element" name="staff">
+                    <summary class="accordion__btn btn" aria-label="Развернуть список">Ходовое
+                    </summary>
+                  </details>
+                  <div class="accordion__content" data-id="1"></div>
 
-                        <ol class="staff__list">
-                          <li class="staff__list-item">Рюкзак не&nbsp;менее 45-55&nbsp;литров;</li>
-                          <li class="staff__list-item">Трекинговые ботинки либо кроссовки с&nbsp;хорошим
-                            протектором (лучше высокие);
-                          </li>
-                          <li class="staff__list-item">Футболка (с&nbsp;длинным рукавом, идеально -
-                            еще и&nbsp;с&nbsp;капюшоном);</li>
-                          <li class="staff__list-item">Штаны ходовые легкие;</li>
-                          <li class="staff__list-item">Кепка/панама;
-                          </li>
-                          <li class="staff__list-item">Палки треккинговые;
-                          </li>
-                          <li class="staff__list-item">Очки солнцезащитные;
-                          </li>
-                          <li class="staff__list-item">Чехол для рюкзака (rain-cover);
-                          </li>
-                          <li class="staff__list-item">Бафф тонкий летний (на&nbsp;голову/на шею);
-                          </li>
-                          <li class="staff__list-item">Поясная сумка для мелочей (опционально);</li>
-                          <li class="staff__list-item">Перчатки тонкие от&nbsp;солнца (опционально);
-                          </li>
-                          <li class="staff__list-item">Хоба-сидушка
-                          </li>
-                        </ol>
+                  <details class="accordion__element" name="staff">
+                    <summary class="accordion__btn btn" aria-label="Развернуть список">Вещи с&nbsp;собой
+                      (в&nbsp;рюкзаке)
+                    </summary>
+                  </details>
+                  <div class="accordion__content" data-id="2"></div>
 
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion__element">
-                    <button class="accordion__btn btn" type="button" aria-label="Развернуть список">
-                      <span class="accordion__btn-text">Вещи с&nbsp;собой (в&nbsp;рюкзаке)</span>
-                      <span class="accordion__btn-icon"></span>
-                    </button>
-                    <div class="accordion__content">
-                      <div class="accordion__inner">
+                  <details class="accordion__element" name="staff">
+                    <summary class="accordion__btn btn" aria-label="Развернуть список">Техника
+                    </summary>
+                  </details>
+                  <div class="accordion__content" data-id="3"></div>
 
-                        <ol class="staff__list">
-                          <li class="staff__list-item">Дождевик (желательно пончо);
-                          </li>
-                          <li class="staff__list-item">Кофта флисовая;
-                          </li>
-                          <li class="staff__list-item">Куртка ветровка либо тонкая мембрана;
-                          </li>
-                          <li class="staff__list-item">Кроксы/удобные бивуачные тапки, которые
-                            хорошо держатся на&nbsp;ноге (для бродов);
-                          </li>
-                          <li class="staff__list-item">Футболка запасная (лучше с&nbsp;длинным рукавом) 1-2&nbsp;шт;
-                          </li>
-                          <li class="staff__list-item">Трусы синтетика запасные (2-3&nbsp;шт);
+                  <details class="accordion__element" name="staff">
+                    <summary class="accordion__btn btn" aria-label="Развернуть список">Спальная система
+                    </summary>
+                  </details>
+                  <div class="accordion__content" data-id="4"></div>
 
-                          </li>
-                          <li class="staff__list-item">Носки треккинговые тонкие запасные (2-3&nbsp;пары);
-                          </li>
-                          <li class="staff__list-item">Носки мембранные 1&nbsp;пара;
-                          </li>
-                        </ol>
+                  <details class="accordion__element" name="staff">
+                    <summary class="accordion__btn btn" aria-label="Развернуть список">Косметика/гигиена
+                    </summary>
+                  </details>
+                  <div class="accordion__content" data-id="5"></div>
 
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion__element">
-                    <button class="accordion__btn btn" type="button" aria-label="Развернуть список">
-                      <span class="accordion__btn-text">Техника</span>
-                      <span class="accordion__btn-icon"></span>
-                    </button>
-                    <div class="accordion__content">
-                      <div class="accordion__inner">
-
-                        <ol class="staff__list">
-                          <li class="staff__list-item">Фонарик + зарядка к нему;
-                          </li>
-                          <li class="staff__list-item">Пауэрбанк;
-
-                          </li>
-                          <li class="staff__list-item">Зарядка для пауэрбанка и кабель для зарядки телефона;
-                          </li>
-                          <li class="staff__list-item">Зарядное для телефона
-                          </li>
-                        </ol>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion__element">
-                    <button class="accordion__btn btn" type="button" aria-label="Развернуть список">
-                      <span class="accordion__btn-text">Спальная система</span>
-                      <span class="accordion__btn-icon"></span>
-                    </button>
-                    <div class="accordion__content">
-                      <div class="accordion__inner">
-
-                        <ol class="staff__list">
-                          <li class="staff__list-item">Палатка (на 2х человек);
-                          </li>
-                          <li class="staff__list-item">Коврик надувной/пенка;
-                          </li>
-                          <li class="staff__list-item">Спальник;
-                          </li>
-                          <li class="staff__list-item">Термобелье для сна;
-                          </li>
-                          <li class="staff__list-item">Носки пуховые/шерстяные для сна (опционально)
-                          </li>
-                        </ol>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion__element">
-                    <button class="accordion__btn btn" type="button" aria-label="Развернуть список">
-                      <span class="accordion__btn-text">Косметика/гигиена</span>
-                      <span class="accordion__btn-icon"></span>
-                    </button>
-                    <div class="accordion__content">
-                      <div class="accordion__inner">
-
-                        <ol class="staff__list">
-                          <li class="staff__list-item">Мыло;
-                          </li>
-                          <li class="staff__list-item">Зубная паста + зубная щетка;
-                          </li>
-                          <li class="staff__list-item">Твердый шампунь;
-                          </li>
-                          <li class="staff__list-item">Туалетная бумага;
-                          </li>
-                          <li class="staff__list-item">Лопатка для туалета (одна на 2-4 чел);
-                          </li>
-                          <li class="staff__list-item">Дезодорант;
-                          </li>
-                          <li class="staff__list-item">Крем для лица солнцезащитный;
-                          </li>
-                          <li class="staff__list-item">Бальзам для губ солнцезащитный;
-                          </li>
-                          <li class="staff__list-item">Салфетки влажные антибактериальные + гель для очищения рук;
-                          </li>
-                          <li class="staff__list-item">Зеркало (опционально)
-                          </li>
-                        </ol>
-
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion__element">
-                    <button class="accordion__btn btn" type="button" aria-label="Развернуть список">
-                      <span class="accordion__btn-text">Личные вещи</span>
-                      <span class="accordion__btn-icon"></span>
-                    </button>
-                    <div class="accordion__content">
-                      <div class="accordion__inner">
-
-                        <ol class="staff__list">
-                          <li class="staff__list-item">Беруши (опционально);
-                          </li>
-                          <li class="staff__list-item">Бутылка для воды каждому минимум 2 л пустая пластиковая + бутылка
-                            500-1000мл;
-                          </li>
-                          <li class="staff__list-item">Полотенце микрофибра;
-                          </li>
-                          <li class="staff__list-item">Расчёска;
-                          </li>
-                          <li class="staff__list-item">Кружка, ложка;
-                          </li>
-                          <li class="staff__list-item">Гермомешок 10л;
-                          </li>
-                          <li class="staff__list-item">Индивидуальная аптечка (обязательно наличие пачки пластырей,
-                            бальзама от мозолей);
-                          </li>
-                          <li class="staff__list-item">Спасодеяло, свисток, спички;
-                          </li>
-                          <li class="staff__list-item">Фильтр для воды (опционально, но очень желательно);
-                          </li>
-                          <li class="staff__list-item">Паспорт в непромокаемом чехле
-                          </li>
-                        </ol>
-
-                      </div>
-                    </div>
-                  </div>
+                  <details class="accordion__element" name="staff">
+                    <summary class="accordion__btn btn" aria-label="Развернуть список">Личные вещи
+                    </summary>
+                  </details>
+                  <div class="accordion__content" data-id="6"></div>
                 </div>
               </div>
               <p class="staff__section-text main__section-text">Обязательно все, где не указано «опционально».</p>
@@ -412,8 +267,21 @@
           <div class="container">
             <h2 class="training__title main__section-title">Подготовка</h2>
             <div class="training__content">
-              <p class="training__text main__section-text">Помимо рюкзака с вещами к горному походу нужно подготовить и
-                тело.</p>
+              <p class="training__text main__section-text">Помимо
+                рюкзака с вещами к горному походу нужно подготовить и тело.
+              </p>
+              <p class="training__text main__section-text"><strong>От&nbsp;того, насколько хорошо
+                  подготовлен
+                  каждый участник, зависит не&nbsp;только его личное самочувствие, но&nbsp;и&nbsp;общее благополучие
+                  всего
+                  мероприятия.</strong>
+              </p>
+              <p class="training__text main__section-text">Участник похода отвечает за&nbsp;свое здоровье
+                и&nbsp;физическую
+                подготовку. Нужно сделать объективную оценку физического состояния и&nbsp;по
+                ее&nbsp;результатам заранее начать подготовку&nbsp;&mdash; выполнять специальные комплексы упражнений.
+                Чем
+                труднее предстоящий маршрут, тем серьезнее нужно отнестись к&nbsp;своей физической форме.</p>
               <p class="training__text main__section-text">Сложность данного маршрута считается средней,
                 но&nbsp;на&nbsp;нем есть
                 сложные участки (например, длительный крутой спуск по&nbsp;сыпухе, затяжные подъемы), то&nbsp;есть для
@@ -422,28 +290,28 @@
                 в&nbsp;горном походе под рюкзаком, либо для человека физически не&nbsp;выносливого, маршрут может
                 ощущаться очень
                 сложным.</p>
-              <p class="training__text main__section-text"><strong>Пример задачи на&nbsp;выносливость
-                  и&nbsp;силу</strong>&nbsp;&mdash; 1&nbsp;день
-                из&nbsp;жизни походника. Цель&nbsp;&mdash; пройти 15&nbsp;км по&nbsp;сильно пересеченной
-                местности с&nbsp;набором высоты минимум 500&nbsp;м, при этом рюкзак на спине весит
-                12&nbsp;килограм + из-за особенностей местности нужно еще
-                нести с&nbsp;собой 2-3&nbsp;литра&nbsp;воды дополнительно.&nbsp;И&nbsp;это все происходит
-                на&nbsp;тридцатиградусной жаре на&nbsp;открытой возвышенности, либо под дождем.</p>
-              <p class="training__text main__section-text">
-                Предварительная физическая подготовка к&nbsp;горному походу нужна любому, кто в&nbsp;этот поход
-                собирается
-                идти.
-              </p>
+              <blockquote class="training__quote main__section-text"><i>&laquo;В&nbsp;критической ситуации
+                  ты&nbsp;не&nbsp;поднимешься до
+                  уровня своих ожиданий, а&nbsp;упадешь до&nbsp;уровня
+                  своей подготовки&raquo;</i></blockquote>
               <h3 class="training__text-title main__section-text-title">Рекомендации по&nbsp;подготовке:</h3>
               <ul class="training__list">
                 <li class="training__list-item">
-                  <p class="training__text main__section-text">Силовые (тренажерный зал, кроссфит, каллистеника) 2-3
-                    раза
-                    в&nbsp;неделю. Акцент на&nbsp;ноги, спину, кор.</p>
+                  <img class="training__img" src="./images/training/gym.png" alt="силовые тренировки">
+                  <p class="training__text main__section-text">Для предотвращения травм важно
+                    укреплять мышцы и
+                    суставы. Силовые тренировки помогут подготовить тело к
+                    нагрузкам и&nbsp;снизить риск повреждений. Акцент на&nbsp;ноги, спину, кор. Силовые
+                    тренировки&nbsp;&mdash; 2-3 раза
+                    в&nbsp;неделю.</p>
                 </li>
                 <li class="training__list-item">
-                  <p class="training__text main__section-text">Кардио (любой кардио-тренажер, либо бег, быстрая ходьба в
-                    горку на&nbsp;свежем воздухе) 2&nbsp;раза в&nbsp;неделю.</p>
+                  <img class="training__img" src="./images/training/running.png" alt="кардиотренировки">
+                  <p class="training__text main__section-text">Выносливость&nbsp;&mdash; ключевой фактор
+                    успеха в&nbsp;любом походе.
+                    Регулярные кардиотренировки, такие как бег, велосипед или
+                    плавание, помогут развить необходимую выносливость. Кардиотренировки&nbsp;&mdash; 2&nbsp;раза
+                    в&nbsp;неделю.</p>
                 </li>
               </ul>
               <p class="training__text main__section-text">Подробнее обсудим&nbsp;в <a
@@ -455,7 +323,7 @@
           <div class="container">
             <div class="tour-info__content">
               <h2 class="tour-info__title main__section-title">Стоимость</h2>
-              <h3 class="tour-info__text-title main__section-text-title"><strong>57 000 р.</strong></h3>
+              <h3 class="tour-info__text-title main__section-text-title"><strong>59 000 р.</strong></h3>
               <p class="tour-info__text main__section-text"><strong>Включено в стоимость:</strong></p>
               <ul class="tour-info__list">
                 <li class="tour-info__list-item">
@@ -477,9 +345,7 @@
                 </li>
                 <li class="tour-info__list-item">
                   <p class="tour-info__text main__section-text">Питание на&nbsp;активной части маршрута
-                    (завтрак/ужин-сублиматы, обед&nbsp;&mdash; сублиматы + перекус тем, что
-                    купим по
-                    пути в&nbsp;населенном пункте)</p>
+                    (сублиматы + перекус тем, что купим по пути в&nbsp;населенном пункте)</p>
                 </li>
                 <li class="tour-info__list-item">
                   <p class="tour-info__text main__section-text">Газ, газовое оборудование, групповая посуда</p>
@@ -510,7 +376,7 @@
                   </p>
                 </li>
                 <li class="tour-info__list-item">
-                  <p class="tour-info__text main__section-text">Ночевка в Махачкале при необходимости перед вылетом</p>
+                  <p class="tour-info__text main__section-text">Ночевка в Махачкале после похода</p>
                 </li>
                 <li class="tour-info__list-item">
                   <p class="tour-info__text main__section-text">Страховка</p>
@@ -553,12 +419,12 @@
         <div class="footer__content">
           <img class="footer__logo" src="images/logo/footer__logo.png" alt="лого девушки-походницы" width="107"
             height="85">
-          <!-- <button id="schedule" class="footer__btn btn" type="button">
+          <button id="schedule" class="footer__btn btn" type="button">
             <span class="footer__btn-text">Куда мы&nbsp;еще идем в&nbsp;2026 году</span>
             <svg width="81" height="74" aria-hidden="true">
               <use xlink:href="images/sprite/sprite.svg#schedule"></use>
             </svg>
-          </button> -->
+          </button>
           <button id="rules" class="footer__btn btn" type="button">
             <span class="footer__btn-text">Особености и правила поведения на тропе</span>
           </button>

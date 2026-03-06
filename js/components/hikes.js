@@ -19,11 +19,11 @@ export default function hikes() {
   const hikesTableCaption = getEl(hikesTable, 'caption', 'hikes-table__caption', 'приключения на 2026 год:')
   const hikesTableHead = getEl(hikesTable, 'thead', 'hikes-table__head')
   const hikesTableRow = getEl(hikesTableHead, 'tr', 'hikes-table__row')
-  const hikesTableTh1 = getEl(hikesTableRow, 'th', 'hikes-table__th', 'Когда')
-  const hikesTableTh2 = getEl(hikesTableRow, 'th', 'hikes-table__th', 'Куда')
-  const hikesTableTh3 = getEl(hikesTableRow, 'th', 'hikes-table__th', 'Кол-во дней')
-  const hikesTableTh4 = getEl(hikesTableRow, 'th', 'hikes-table__th', 'Тип')
-  const hikesTableTh5 = getEl(hikesTableRow, 'th', 'hikes-table__th', 'Описание')
+
+  const tableHeads = ['Когда', 'Куда', 'Кол-во дней', 'Тип', 'Описание']
+  tableHeads.map(el => {
+    getEl(hikesTableRow, 'th', 'hikes-table__th', el)
+  })
   const hikesTableBody = getEl(hikesTable, 'tbody', 'hikes-table__body')
 
 

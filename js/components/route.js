@@ -7,7 +7,11 @@ export default function route() {
   const appEl = document.getElementById("app")
   const navEl = document.querySelector(".nav")
 
+  const footerLinkSchedule = document.querySelector("#schedule")
+  const footerLinkRules = document.querySelector("#rules")
   navEl.style.display = "none"
+  footerLinkSchedule.style.display = "none"
+  footerLinkRules.style.display = "flex"
 
   const routeSection = getEl(appEl, 'section', 'route-section main__section')
   const routeContainer = getEl(routeSection, 'div', 'container')
@@ -37,7 +41,7 @@ export default function route() {
 
   getData('./data/data-days.json')
 
-  const routeTextAfter = getEl(routeContent, 'p', 'route-section__text route-section__text--white main__section-text', 'В наш маршрут заложен 1 резервный день на случай непогоды, либо других непредвиденных обстоятельств, который мы сможем провести, например, в Гунибе, исследуя его окрестности с многочисленными достопримечательностями.')
+  const routeTextAfter = getEl(routeContent, 'p', 'route-section__text route-section__text--white main__section-text', 'В наш маршрут заложен 1 резервный день на случай непогоды, либо других непредвиденных обстоятельств. Этот день мы сможем провести, например, в Гунибе, исследуя его окрестности с многочисленными достопримечательностями.')
 
   const routeFigure = getEl(routeContent, 'figure', 'route-section__figure')
   const routeFigureImg = getImgEl(routeFigure, 'route-section__image', 'images/images/chugli.jpg', 'Палеонтологический музей в селе Нижнее Чугли')

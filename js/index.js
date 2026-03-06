@@ -5,10 +5,13 @@ import { initAccordion } from './components/accordion.js';
 
 document.addEventListener('DOMContentLoaded', function () {
 
+  const footerLink = document.querySelector("#rules")
+  footerLink.style.display = "none"
+
+
   // Запуск приложения
   navigate('home')
-
+  initAccordion()
   btnUpScroll()
   initImages()
-  initAccordion()
 })

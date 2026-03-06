@@ -6,10 +6,26 @@
   flex-direction: column;
   flex-basis: 100%;
   border-radius: 2px;
-  $root: &;
 
   &__element {
     border-bottom: 1px solid variables.$color-transparent-bg;
+
+    &[open] {
+      border-bottom: none;
+    }
+
+    &[open]+.accordion__content {
+      grid-template-rows: 1fr;
+      border-bottom: 1px solid variables.$color-transparent-bg;
+    }
+
+    &[open] .accordion__btn::after {
+      transform: rotate(45deg);
+    }
+
+    &[open] .accordion__btn {
+      color: variables.$color-peach;
+    }
 
     @media (hover: hover) {
       &:hover:not(:focus-visible) {
@@ -22,12 +38,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
-    width: 100%;
     text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
     color: variables.$color-black;
-    padding: 20px 40px 20px 0;
-    position: relative;
+    padding: 20px 20px 20px 0;
     cursor: pointer;
     transition: color 0.3s ease;
 
@@ -39,30 +55,19 @@
       }
     }
 
-    @media (hover: hover) {
-
-      &:hover:not(:focus-visible) .accordion__btn-icon::before,
-      &:hover:not(:focus-visible) .accordion__btn-icon::after,
-      &:focus-visible .accordion__btn-icon::before,
-      &:focus-visible .accordion__btn-icon::after {
-        background-color: variables.$color-peach;
-      }
+    &::marker {
+      content: '';
     }
 
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      z-index: 1;
+    &::after {
+      content: '+';
+      font-size: 42px;
+      transition: transform 0.3s ease;
     }
 
-    &--active {
-      #{$root}__btn-icon {
-        transform: rotate(45deg);
-      }
+    @include vp-767 {
+      font-size: 18px;
+      line-height: 20px;
     }
   }
 
@@ -77,42 +82,9 @@
     }
   }
 
-  &__btn-icon {
-    position: absolute;
-    height: 32px;
-    width: 32px;
-    top: 15px;
-    right: 0;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-
-    &::before,
-    &::after {
-      content: "";
-      height: 2px;
-      width: 19px;
-      background-color: variables.$color-transparent-bg;
-      border-radius: 10px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    &::after {
-      height: 19px;
-      width: 2px;
-      transition: opacity 0.3s ease;
-    }
-  }
-
   &__content {
-    max-height: 0;
-    overflow: hidden;
-    will-change: max-height;
+    display: grid;
+    grid-template-rows: 0fr;
     transition: all 0.3s ease-in-out;
-  }
-
-  &__inner {
-    padding: 0 0 20px 0;
   }
 }

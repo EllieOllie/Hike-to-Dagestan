@@ -1,32 +1,33 @@
-// import { getEl } from '../components.js'
-// import { createAccordionElement } from './templates/templates.js'
+import { getEl } from '../components.js'
 
-const accordions = document.querySelectorAll(".accordion__element");
-
-const onAccordionBtnClick = (e) => {
-  const self = e.currentTarget
-
-  const btn = self.querySelector(".accordion__btn");
-  const content = self.querySelector(".accordion__content");
-
-  btn.classList.toggle("accordion__btn--active");
-  // const activeAccordion = self.querySelector('.accordion__btn--active')
-
-  //сделать спомощью summary/details плавно и чтобы одна вкладка открыта, все остальные были закрыты.
-
-  if (btn.classList.contains("accordion__btn--active")) {
-    btn.setAttribute("aria-expanded", true);
-    content.setAttribute("aria-hidden", false);
-    content.style.maxHeight = content.scrollHeight + "px";
-  } else {
-    btn.setAttribute("aria-expanded", false);
-    content.setAttribute("aria-hidden", true);
-    content.style.maxHeight = null;
-  }
-}
 
 export const initAccordion = () => {
-  accordions.forEach((el) => {
-    el.addEventListener('click', onAccordionBtnClick)
+  const accordions = document.querySelectorAll(".accordion__content")
+  accordions.forEach(accordion => {
+    const staffList = getEl(accordion, 'ol', 'staff__list')
+
+    const getData = (url) => {
+      fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+
+          for (const item of data) {
+            const obj = accordion.dataset
+
+            if (item.id == obj.id) {
+              const list = item.list
+              list.map(el => {
+                const staffListItem = getEl(staffList, 'li', 'staff__list-item')
+                staffListItem.innerHTML = el
+              })
+            }
+          }
+        })
+    }
+
+    getData('./data/data-staff.json')
   })
+
 }
+
+

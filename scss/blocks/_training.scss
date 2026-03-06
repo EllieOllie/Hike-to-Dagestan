@@ -29,6 +29,13 @@
     color: variables.$color-white;
   }
 
+  &__quote {
+    padding: 30px;
+    text-align: center;
+    background-color: variables.$color-white;
+    border-radius: 5px;
+  }
+
   &__list {
     margin: 0;
     padding-left: 0;
@@ -47,31 +54,13 @@
     display: flex;
     align-items: center;
     gap: 20px;
+  }
 
-    &::before {
-      content: '';
-      width: 100px;
-      height: 100px;
-      background-size: cover;
-      background-repeat: no-repeat;
+  &__img {
+    width: 100px;
 
-      @include vp-1023 {
-        width: 60px;
-        height: 50px;
-      }
-
-      @include vp-767 {
-        width: 100px;
-        height: 35px;
-      }
-    }
-
-    &:first-child::before {
-      background-image: url('../images/training/gym.png');
-    }
-
-    &:last-child::before {
-      background-image: url('../images/training/running.png');
+    @include vp-1023 {
+      width: 60px;
     }
   }
 

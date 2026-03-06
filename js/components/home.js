@@ -12,10 +12,10 @@ export default function home() {
     navigate("route")
   })
 
-  // const hikesBtn = document.body.querySelector('#schedule')
-  // hikesBtn.addEventListener("click", function () {
-  //   navigate("hikes")
-  // })
+  const hikesBtn = document.body.querySelector('#schedule')
+  hikesBtn.addEventListener("click", function () {
+    navigate("hikes")
+  })
 
   const rulesBtn = document.body.querySelector('#rules')
   rulesBtn.addEventListener("click", function () {

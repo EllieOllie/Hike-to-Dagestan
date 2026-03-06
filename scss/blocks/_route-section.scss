@@ -58,7 +58,7 @@
       }
     }
 
-    &:nth-child(n+5) .route-card__content {
+    &:nth-child(n+4) .route-card__content {
       background-color: variables.$color-transparent-white;
     }
   }
@@ -98,5 +98,9 @@
 
   &__image {
     width: 100%;
+
+    @include vp-1023 {
+      height: 500px;
+    }
   }
 }
