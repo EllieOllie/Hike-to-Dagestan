@@ -21,7 +21,6 @@
     }
   }
 
-
   &__btn {
     display: flex;
     align-items: center;
@@ -51,7 +50,6 @@
   }
 
   &__btn-text {
-    // width: 180px;
     color: variables.$color-white;
     font-size: 18px;
     font-weight: 400;
@@ -60,8 +58,9 @@
     transition: color 0.3s ease;
 
     @include vp-1023 {
-      font-size: 16px;
-      line-height: 20px;
+      width: 125px;
+      font-size: 14px;
+      line-height: 18px;
     }
   }
 }

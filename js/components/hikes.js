@@ -45,8 +45,8 @@ export default function hikes() {
 
   const hikesLinkBack = getLinkEl(hikesContent, 'hikes-section__link link', 'index.html', 'Назад на главную страницу')
 
-  hikesLinkBack.addEventListener("click", function () {
-    navigate('home')
-  })
+  // hikesLinkBack.addEventListener("click", function () {
+  //   navigate('home')
+  // })
 
 }

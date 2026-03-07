@@ -40,8 +40,8 @@ export default function rules() {
 
   const rulesLinkBack = getLinkEl(rulesContent, 'rules-section__link link', 'index.html', 'Назад на главную страницу')
 
-  rulesLinkBack.addEventListener("click", function () {
-    navigate('home')
-  })
+  // rulesLinkBack.addEventListener("click", function () {
+  //   navigate('home')
+  // })
 
 }

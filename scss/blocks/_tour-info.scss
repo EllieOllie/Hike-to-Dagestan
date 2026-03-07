@@ -24,6 +24,13 @@
     gap: 25px;
   }
 
+  &__lists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+  }
+
   &__text-title {
     font-family: variables.$ff-intro;
     font-size: 42px;
@@ -39,6 +46,10 @@
 
   &__text {
     color: variables.$color-white;
+
+    &--highlighted {
+      text-align: center;
+    }
   }
 
   &__list {

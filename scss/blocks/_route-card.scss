@@ -8,7 +8,7 @@
 
   @include vp-1023 {
     flex-direction: column;
-    gap: 20px;
+    gap: 0;
   }
 
   &__content {
@@ -17,6 +17,7 @@
 
     @include vp-1023 {
       flex-basis: 100%;
+      padding: 10px;
     }
   }
 
@@ -38,6 +39,7 @@
       line-height: 20px;
       gap: 10px;
       text-align: center;
+      margin-bottom: 5px;
     }
   }
 
@@ -67,6 +69,11 @@
     line-height: 24px;
     color: variables.$color-white;
     text-shadow: 2px 2px 10px variables.$color-black;
+
+    @include vp-1023 {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 
   &__climb {

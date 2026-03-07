@@ -1,7 +1,7 @@
 // navigate
 export async function navigate(pageName) {
   const appEl = document.getElementById("app")
-  const homePage = appEl.innerHTML
+  // const homePage = appEl.innerHTML
 
   switch (pageName) {
     case "route":

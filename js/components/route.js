@@ -47,10 +47,15 @@ export default function route() {
   const routeFigureImg = getImgEl(routeFigure, 'route-section__image', 'images/images/chugli.jpg', 'Палеонтологический музей в селе Нижнее Чугли')
   const routeFigcaption = getEl(routeFigure, 'figcaption', 'route-section__description', 'По пути в Махачкалу на обратном пути мы заедем в село Нижнее Чугли, чтобы посетить уникальный палеонтологический музей, собранный из местных находок. На фото пример экспоната - Ихтиозавр "Чурчума". В такой сохранности нет ни в одном музее мира!')
 
+  const rulesBtn = document.body.querySelector('#rules')
+  rulesBtn.addEventListener("click", function () {
+    navigate("rules")
+  })
+
   const routeLinkBack = getLinkEl(routeContent, 'route-section__link link', 'index.html', 'Назад на главную страницу')
 
-  routeLinkBack.addEventListener("click", function () {
-    navigate('home')
-  })
+  // routeLinkBack.addEventListener("click", function () {
+  //   navigate()
+  // })
 
 }

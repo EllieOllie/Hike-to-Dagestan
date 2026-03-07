@@ -33,6 +33,10 @@
     }
   }
 
+  &__text {
+    text-align: center;
+  }
+
   &__lists {
     display: flex;
     align-self: start;

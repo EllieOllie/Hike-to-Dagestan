@@ -1211,8 +1211,6 @@ button {
   padding: 10px;
   font-size: 22px;
   line-height: 24px;
-  text-decoration: underline;
-  text-underline-offset: 3px;
   transition: color 0.3s ease;
 }
 @media (max-width: 767px) {
@@ -1602,11 +1600,6 @@ button {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-@media (hover: hover) {
-  .image:hover, .image:focus-visible {
-    transform: scale(1.05);
-  }
-}
 .image__item {
   width: 100%;
   height: 650px;
@@ -1622,7 +1615,7 @@ button {
   position: absolute;
   content: "";
   width: 100%;
-  bottom: 45px;
+  bottom: 25px;
   text-align: center;
   font-size: 20px;
   font-weight: 500;
@@ -1723,6 +1716,9 @@ button {
     line-height: 22px;
   }
 }
+.staff__text {
+  text-align: center;
+}
 .staff__lists {
   display: flex;
   align-self: start;
@@ -1792,7 +1788,7 @@ button {
   font-weight: 500;
   line-height: 28px;
   color: #3B3A48;
-  padding: 20px 20px 20px 0;
+  padding: 20px 0;
   cursor: pointer;
   transition: color 0.3s ease;
 }
@@ -1917,6 +1913,12 @@ button {
   justify-content: center;
   gap: 25px;
 }
+.tour-info__lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
 .tour-info__text-title {
   font-family: "Intro", "Arial", sans-serif;
   font-size: 42px;
@@ -1932,6 +1934,9 @@ button {
 }
 .tour-info__text {
   color: #ffffff;
+}
+.tour-info__text--highlighted {
+  text-align: center;
 }
 .tour-info__list {
   margin: 0;
@@ -2065,8 +2070,9 @@ button {
 }
 @media (max-width: 1023px) {
   .footer__btn-text {
-    font-size: 16px;
-    line-height: 20px;
+    width: 125px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
@@ -2098,8 +2104,12 @@ button {
 }
 @media (max-width: 767px) {
   .hikes-table__th {
-    word-break: break-all;
     padding: 2px;
+  }
+}
+@media (max-width: 767px) {
+  .hikes-table__th:nth-child(5) {
+    display: none;
   }
 }
 .hikes-table__th:nth-child(1) {
@@ -2121,8 +2131,12 @@ button {
 }
 @media (max-width: 767px) {
   .hikes-table__td {
-    word-break: break-all;
     padding: 2px;
+  }
+}
+@media (max-width: 767px) {
+  .hikes-table__td:nth-child(5) {
+    display: none;
   }
 }
 
@@ -2231,7 +2245,7 @@ button {
 @media (max-width: 1023px) {
   .route-card {
     flex-direction: column;
-    gap: 20px;
+    gap: 0;
   }
 }
 .route-card__content {
@@ -2241,6 +2255,7 @@ button {
 @media (max-width: 1023px) {
   .route-card__content {
     flex-basis: 100%;
+    padding: 10px;
   }
 }
 .route-card__title {
@@ -2260,6 +2275,7 @@ button {
     line-height: 20px;
     gap: 10px;
     text-align: center;
+    margin-bottom: 5px;
   }
 }
 .route-card__image {
@@ -2289,6 +2305,12 @@ button {
   text-shadow: 2px 2px 10px #3B3A48;
 }
 @media (max-width: 1023px) {
+  .route-card__img-caption {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 1023px) {
   .route-card__climb {
     width: 125px;
   }
@@ -2312,8 +2334,13 @@ button {
 }
 .rules-section__list {
   margin: 0;
-  padding-left: 15px;
+  padding-left: 30px;
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+@media (max-width: 767px) {
+  .rules-section__list {
+    gap: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

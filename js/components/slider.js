@@ -29,10 +29,6 @@ const createSlider = () => {
     mousewheel: {
       sensivity: 1,
     },
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: true,
-    // },
     speed: 1000,
     loop: false,
     a11y: false,
